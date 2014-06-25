@@ -55,9 +55,9 @@ $$S_Y=\left( \begin{matrix}
 ![Spiegleung](media/L7/Drehung_R2.png)
 
 ---
-$$D_{\alpha}=\left( \begin{matrix} 
-        \cos \alpha & -\sin \alpha\\\\
-        \sin \alpha & \cos \alpha \\\\
+$$R_{\alpha}=\left( \begin{matrix} 
+        \cos (\alpha) & \sin(\alpha)\\\\
+        - \sin(\alpha) & \cos(\alpha) \\\\
         \end{matrix} 
         \right) $$
 ---
@@ -74,89 +74,85 @@ $$ \begin{matrix}
 
 <br>
 ---
-### Orthogonale Projektion
+### Orthogonale Projektion 
+### Punkt auf eine Gerade a
+
 
 $$ a: y = -3 x$$
 
-$$ \tan \alpha = -3$$
 
-$$ alpha = -1.249 $$
-
-$$R_{\alpha} = \left( \begin{matrix} 
-        \cos \alpha & -\sin \alpha\\\\
-        \sin \alpha & \cos \alpha \\\\
-        \end{matrix} \right)   $$
-
-$$R_{-\alpha} = \left( \begin{matrix} 
-        \cos \alpha & \sin \alpha\\\\
-        -\sin \alpha & \cos \alpha \\\\
-        \end{matrix} \right)  $$
-
-$$P_X=\left( \begin{matrix} 
-        1 & 0\\\\
-        0 & 0\\\\
-        \end{matrix} 
-        \right) $$
+<video width="468" height="454" data-autoplay >
+	    <source src="media/movies/OrtoProj_auf_Gerade.m4v" type="video/mp4" />
+	    <source src="media/movies/OrtoProj_auf_Gerade.webm" type="video/webm" />
+		Your browser does not support the <code>video</code> element.
+</video>
 ---
-
-$$R_{-a} \cdot P_X \cdot R_a $$
-
-
-
----
-
+### Vorgehen
+* Alles (Punkt und Gerade) drehen bis die Gerade a auf der  x-Achse liegt
+	* Drehen um den Winkel \\(\alpha\\) mit \\(\tan(\alpha) = -3\\)
+* P auf die x-Achse (in diesem Fall auch Gerade a) projizieren
+* den projezierten Punkt P' wieder zurück drehen.
 --- 
+### 1. Schritt Drehen um \\( \alpha \\)
 
-$$P = \left( \begin{matrix} 
-        \cos \alpha & \sin \alpha\\\\
-        -\sin \alpha & \cos \alpha \\\\
-        \end{matrix} \right) $$
-
-\begin{matrix} 
-        1 & 0\\\\
-        0 & 0\\\\
-        \end{matrix} 
-        \right) \left( \begin{matrix} 
-        \cos \alpha & -\sin \alpha\\\\
-        \sin \alpha & \cos \alpha \\\\
-        \end{matrix} \right) $$
-
-
----    
-
-
-
-
-
-### Projektion auf homogenen Vektor anwenden
+  \\(\tan(\alpha) = -3 \to \alpha \approx -71.57°\\)
 
 <br>
 
+  \\(R_{\alpha} \left( \begin{matrix} x \\\\y \\\\ \end{matrix} \right) = \left( \begin{matrix} \cos (\alpha) & \sin(\alpha)\\\\ - \sin(\alpha) & \cos(\alpha)\\\\ \end{matrix} \right) \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right) \\)
 
-$$P\cdot \overrightarrow{r}=\left( \begin{matrix} 
-        1 & 0& 0 & 0\\\\
-        0 & 1 & 0 & 0\\\\
-        0 & 0 & 1 & 0\\\\
-        0 & 0 & 1/f & 0\\\\
-        \end{matrix} 
-        \right)
-        \left( \begin{matrix} 
-        x \\\\
-        y \\\\
-        z \\\\
-        1 \\\\
-        \end{matrix} 
-        \right)=
-        \left( \begin{matrix} 
-        x \\\\
-        y \\\\
-        z \\\\
-        z/f \\\\
-        \end{matrix} 
-        \right)
-         $$
+<br>
 
---- 
+[GeoGebra Beispiel](geogebra/L7/Schritt1OrthoProjGerade.ggb)
+---
+![Schritt1](media/L7/proj_erster_schritt.png)
+---
+### 2. Schritt Projektion auf x-Achse
+
+
+
+  \\(P_{x} \left( \begin{matrix} x \\\\y \\\\ \end{matrix} \right) = \left( \begin{matrix} 1 & 0\\\\ 0 & 0\\\\ \end{matrix} \right) \left( \begin{matrix} x\\\\ y\\\\ \end{matrix} \right) \\)
+
+<br>
+
+[GeoGebra Beispiel](geogebra/L7/Schritt2OrthoProjGerade.ggb)
+
+---
+![Schritt2](media/L7/proj_zweiter_schritt.png)
+---
+### 3. Schritt Rückdrehen um \\( \alpha \\)
+
+ \\( \alpha \approx -71.57°\\)
+
+<br>
+
+  \\(R_{-\alpha}  \left( \begin{matrix} x \\\\y \\\\ \end{matrix} \right) = \left( \begin{matrix} \cos (\alpha) & -\sin(\alpha)\\\\ \sin(\alpha) & \cos(\alpha)\\\\ \end{matrix} \right) \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right) \\)
+
+<br>
+
+[GeoGebra Beispiel](geogebra/L7/Schritt3OrthoProjGerade.ggb)
+---
+![Schritt3](media/L7/proj_dritter_schritt.png)
+---
+### Alles Zusammen 
+
+$$R_{-a} \cdot P_X \cdot R_a \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right)  $$
+
+<br>
+
+\\( \left( \begin{matrix} \cos (\alpha) & \sin(\alpha)\\\\ - \sin(\alpha) & \cos(\alpha)\\\\ \end{matrix} \right) \left( \begin{matrix} 1 & 0\\\\ 0 & 0\\\\ \end{matrix} \right) \left( \begin{matrix} \cos (\alpha) & \sin(\alpha)\\\\ - \sin(\alpha) & \cos(\alpha)\\\\ \end{matrix} \right) \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right) \\)
+
+
+
+[Matrix Multiplikation mit WolframAlpha](http://www.wolframalpha.com/input/?i=%7B%7Bcos+a%2C-sin+a%7D%2C%7Bsin+a%2Ccos%7D%7D*%7B%7B1%2C0%7D%2C%7B0%2C0%7D%7D*%7B%7Bcos+a%2Csin+a%7D%2C%7B-+sin+a%2Ccos%7D%7D+)
+
+<br>
+
+\\( \left( \begin{matrix} \cos^2 (\alpha) & \cos(\alpha)\sin(\alpha)\\\\ \cos(\alpha)\sin(\alpha) & \sin^2(\alpha)\\\\ \end{matrix} \right) \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right)  \\)
+
+---
+
+
 </script>
 </section>
 
