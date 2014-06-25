@@ -10,13 +10,15 @@ var RevealMath = window.RevealMath || (function(){
 	options.mathjax = '../reveal/plugin/math/unpacked/MathJax.js'
 	options.mathjax = options.mathjax || 'http://cdn.mathjax.org/mathjax/latest/MathJax.js';
 	options.config = options.config || 'TeX-AMS_HTML-full';
+	options.config = options.config || 'TeX-AMS-MML_SVG-full';
 
 	loadScript( options.mathjax + '?config=' + options.config, function() {
 
 		MathJax.Hub.Config({
 			messageStyle: 'none',
 			tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] },
-			skipStartupTypeset: true
+			skipStartupTypeset: true,
+			processEscapes: true
 		});
 
 		// Typeset followed by an immediate reveal.js layout since
