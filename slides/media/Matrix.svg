@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="500px" version="1.1">
+  <g transform="scale(1.0)">	
+	<g fill="#000000" font-family="Helvetica" font-size="250px">
+		<text x="0" y="250">(</text>
+	</g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="end" font-size="250px">
+		<text x="420" y="250">)</text>
+	</g>
+	
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="110" y="150">1</text></g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="210" y="150">2</text></g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="310" y="150">4</text></g>
+
+    <rect x="86" y="76" width="250" height="90" stroke="none" fill="purple"
+       fill-opacity="0.36" stroke-opacity="0.8"/>	
+
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="110" y="270">2</text></g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="210" y="270">6</text></g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="310" y="270">0</text></g>
+
+	<rect x="86" y="198" width="250" height="90" stroke="none" fill="purple"
+       fill-opacity="0.36" stroke-opacity="0.8"/>	
+
+	<g fill="#000000" font-family="Helvetica" font-size="375px">
+		<text x="400" y="300">(</text>
+	</g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="end" font-size="375px">
+		<text x="1000" y="300">)</text>
+	</g>
+
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="550" y="110">4</text></g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="650" y="110">1</text></g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="750" y="110">4</text></g>	
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="850" y="110">3</text></g>	
+
+
+
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="550" y="220">0</text></g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="650" y="220">-1</text></g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="750" y="220">3</text></g>	
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="850" y="220">1</text></g>	
+
+	
+
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="550" y="330">2</text></g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="650" y="330">7</text></g>
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="750" y="330">5</text></g>	
+	<g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="80px">
+		<text x="850" y="330">2</text></g>	
+
+	
+	<rect x="515" y="40" width="70" height="320" stroke="none" fill="purple"
+       fill-opacity="0.36" stroke-opacity="0.8"/>	
+
+	<rect x="610" y="40" width="70" height="320" stroke="none" fill="purple"
+       fill-opacity="0.36" stroke-opacity="0.8"/>
+
+	<rect x="710" y="40" width="70" height="320" stroke="none" fill="purple"
+       fill-opacity="0.36" stroke-opacity="0.8"/>
+
+    <rect x="810" y="40" width="70" height="320" stroke="none" fill="purple"
+       fill-opacity="0.36" stroke-opacity="0.8"/>
+
+	
+  </g>		
+</svg>
