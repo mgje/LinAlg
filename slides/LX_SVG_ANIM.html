@@ -42,9 +42,8 @@
 <script type="text/template">
 ## SVG ANIMATION
 ---
----
-## Zusammenfassung
----
+
+```Was JavaScript alles kann ! ```
 </script>
 </section>
 
@@ -157,10 +156,16 @@
 		<text x="1540" y="270">12</text></g>
   </g>		
 </svg>
+</section>
 
+<!-- Schluss -->
+<section data-markdown data-separator="---" data-vertical="--" data-background="#FFFFFF">
+<script type="text/template">
 
-
-
+---
+## Zusammenfassung
+---
+</script>
 </section>
 
 
@@ -172,11 +177,12 @@
 		<script src="../reveal/js/reveal.min.js"></script>
 
 		<script>
-		var er = null;
-		var ec = null;
-
+		
+        // Animation Show - 
 		Reveal.addEventListener( 'fragmentshown', function() {
     		var f_Ind = Reveal.getIndices().f;
+    		var er = null;
+			var ec = null;
 
     		//alert(f_Ind);
     		switch(f_Ind){
@@ -240,6 +246,77 @@
     			default:
     				break;
     		}
+		}, false );
+
+ 		// Animation hidden 
+		Reveal.addEventListener( 'fragmenthidden', function() {
+    		var f_Ind = Reveal.getIndices().f;
+    		var er = null;
+			var ec = null;
+
+    		//alert(f_Ind);
+    		switch(f_Ind){
+    			case -1:
+    				er = document.getElementById("row1");
+    				ec = document.getElementById("col1");
+    				er.setAttribute("display","none");
+    				ec.setAttribute("display","none");
+    				er = document.getElementById("row2");
+    				ec = document.getElementById("col4");
+    				er.setAttribute("display","none");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 0:
+    				ec = document.getElementById("col1");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 1:
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 2:
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col4");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 3:
+    				ec = document.getElementById("col4");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col1");
+    				ec.setAttribute("display","none");
+    				er = document.getElementById("row1");
+    				er.setAttribute("display","inline");
+    				er = document.getElementById("row2");
+    				er.setAttribute("display","none");
+    				break;
+    			case 4:
+    				ec = document.getElementById("col1");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 5:
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 6:
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col4");
+    				ec.setAttribute("display","none");
+    				break;
+    				
+    			default:
+    				break;
+    		}
+  		
 		}, false );
 		</script>
 
