@@ -105,16 +105,56 @@ Eine Matrix ist ein rechteckiges Zahlenschema. Die Zahlen werden
 als Elemente der Matrix bezeichnet.
 ___
 
-\((
-\left( 
-	\begin{matrix} 
-		1 & 2\\\\
+<br>
+
+$$
+\\left( \begin{matrix}
+	    1 & 2\\\\
 		3 & 4\\\\
 		1 & 2\\\\
 		3 & 4\\\\  
-	\end{matrix} 
-\right)
-\))
+\end{matrix} \\right) ,
+\\left( \begin{matrix}
+	    1 & 2 & 0 & 6 & 9\\\\
+\end{matrix} \\right) ,
+\\left( \begin{matrix}
+	    4\\\\
+		0 \\\\
+		1 \\\\  
+\end{matrix} \\right) ,
+\\left( \begin{matrix}
+	    4\\\\
+\end{matrix} \\right) 
+$$
+
+---
+## Definition
+___
+Zwei Matrizen sind gleich, wenn sie dieselbe Grösse haben und die 
+einander entsrpechenden Elemente übereinstimmen.
+___
+---
+## Multiplikation
+
+___
+Ist \\( A \\) eine \\( m \times r\\)-Matrix und \\(B\\) eine \\( r \times n\\)-Matrix, so ist das **Produkt** \\( AB \\) die folgendermassen definierte  \\( m \times n\\)-Matrix:
+
+Um das Element in der Zeile \\( i \\) und Spalte \\( j \\) von \\( AB \\) zu bestimmen, multipliziert man paarweise die Elemente der \\( i \\)-ten Zeile von \\( A \\) und der \\( j \\)-ten Spalte von \\( B \\) und addiert die entstehenden Produkte
+___
+---
+
+$$
+\\left( \begin{matrix}
+	    1 & 2 & 4\\\\
+		2 & 6 & 0\\\\
+\end{matrix} \\right)
+\\left( \begin{matrix}
+	    4 & 1 & 4 & 3\\\\
+		0 & -1 & 3 & 1\\\\
+		2 & 7 & 5 & 2\\\\
+\end{matrix} \\right)
+$$
+---
 
 
 ---
