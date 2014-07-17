@@ -6,10 +6,11 @@ LinAlg
 Nr | Themen
 --- | ---
 **1** | Vektoren, Geraden und Ebenen
-**2** | Lineare Abbildungen, Spiegelung, Drehung 
-**3** | Matrizen, Basistransformationen 
-**4** | Determinanten 
-**5** | Lineare Gleichungssysteme 
+**2** | Skalarprodukt, Winkel zwischen Vektoren, Normalprojektion
+**3** | Lineare Abbildungen, Spiegelung, Drehung 
+**4** | Matrizen, Basistransformationen 
+**5** | Determinanten 
+**6** | Lineare Gleichungssysteme 
 
 
 
