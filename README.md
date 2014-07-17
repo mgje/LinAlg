@@ -4,13 +4,13 @@ LinAlg
 ## Lineare Algebra/analytische Geometrie ? Geometrie und Algebra im Zusammenspiel
 
 Themen
----|
-Vektoren, Geraden und Ebenen|
-Lineare Abbildungen, Spiegelung, Drehung|
-Matrizen, Basistransformationen|
-Determinanten|
-Lineare Gleichungssysteme|
----|
+--- |
+Vektoren, Geraden und Ebenen |
+Lineare Abbildungen, Spiegelung, Drehung |
+Matrizen, Basistransformationen |
+Determinanten |
+Lineare Gleichungssysteme |
+--- |
 
 
 ## Literatur
