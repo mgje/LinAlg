@@ -4,7 +4,7 @@ LinAlg
 ## Lineare Algebra/analytische Geometrie ? Geometrie und Algebra im Zusammenspiel
 
 
-Nr | Themen | Verweis
+Nr | Themen | Verweise
 --- | --- | ---
 **1** |	Vektoren in der Ebene und im Raum	| Filler p. 85-113
 **2**	| Skalar-, Vektor und Spatprodukt, Vektorielle Raumgeometrie | Filler p. 122-165
