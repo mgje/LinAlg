@@ -19,8 +19,13 @@ Nr | Themen | Verweise
 **11** | Gauß-Algorithmus und andere Lösungsmethoden	| Gramlich 9-46
 **12** | Projektive Geometrie
 
+### Vektoren in der Ebene und im Raum
+- Vektoren in physikalischen und geometrischen Kontexten 
+- Linearkombinationen von Vektoren
 
-
+### Skalar-, Vektor und Spatprodukt, Vektorielle Raumgeometrie
+- Das Skalarprodukt zweier Vektoren
+- Vektor- und Spatprodukt
 
 
 
