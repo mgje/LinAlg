@@ -38,6 +38,17 @@ Nr | Themen | Verweise
 -  Orthogonale Projektionen
 -  Orthogonal-und Orthonormalbasen
 
+-  Lineare Abbildungen
+-  Die Determinante einer (2,2)-Matrix 
+-  Verallgemeinerung auf (n,n)-Matrizen 
+-  Das Spatprodukt – Berechnung von Volumina
+-  Beschreibung von Geraden durch Parametergleichungen 
+-  Metrische Geometrie von Geraden und Ebenen
+-  Der Begriff des Vektorraumes, Beispiele 
+-  Untervektorröuume
+-  Lineare Hüllen, Erzeugendensysteme, lineare Abhängikeii
+-  Basis und Dimensiont
+
 ## Literatur
 
 - Anton, H. (1998). Lineare Algebra. Berlin: Spektrum.
