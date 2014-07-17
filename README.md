@@ -10,6 +10,8 @@ LinAlg
 |Matrizen, Basistransformationen|
 |Determinanten|
 |Lineare Gleichungssysteme|
+|-|
+
 
 ## Literatur
 
