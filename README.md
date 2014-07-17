@@ -48,6 +48,13 @@ Nr | Themen | Verweise
 -  Untervektorröuume
 -  Lineare Hüllen, Erzeugendensysteme, lineare Abhängikeii
 -  Basis und Dimensiont
+-  Euklidische Vektor- und Punktra ̈ume
+-  Begriffsbestimmung, Ra ̈nge von Matrizen
+-  Matrizenmultiplikation und -inversion
+-   Einige Eigenschaften linearer Abbildungen
+-   MultiplikationvonVektoren
+-   BerechnungvonDeterminanten
+-   
 
 ## Literatur
 
