@@ -4,19 +4,19 @@ LinAlg
 ## Lineare Algebra/analytische Geometrie ? Geometrie und Algebra im Zusammenspiel
 
 
-Nr | Themen
---- | ---
-**1** |	Vektoren in der Ebene und im Raum	
-**2**	| Spatprodukt, Geraden und Ebenen	
-**3** | Vektorräume, Linearkombinationen
-**4** |	Lineare Abhängigkeit, Basisvektoren
-**5** |	Dimension, Matrizen und Matrixoperationen
-**6** | Lineare Abbildungen
-**7** |	 Beispiele von Darstellungsmatrizen, Linearitätsbedingungen	
-**8** |	 Basiswechsel, Rechnen mit Matrizen
-**9** |	 Invertierbare Matrizen, Determinanten und Anwendungen	
-**10** |	 Lineare Gleichungssysteme
-**11** |	 Gauß-Algorithmus und andere Lösungsmethoden	
+Nr | Themen | Verweis
+--- | --- | ---
+**1** |	Vektoren in der Ebene und im Raum	| Filler p. 85-113
+**2**	| Skalar-, Vektor und Spatprodukt, Vektorielle Raumgeometrie | Filler p. 122-165
+**3** | Vektorräume, Linearkombinationen von Vektoren | Filler p. 113-121 , p. 167- 177
+**4** |	Lineare Abhängigkeit, Basisvektoren | Filler p. 178- 201
+**5** |	Dimension, Matrizen und Matrixoperationen | Filler p. 227 -249
+**6** | Lineare Abbildungen | Filler p.257 - 277
+**7** |	Beispiele von Darstellungsmatrizen, Linearitätsbedingungen	
+**8** |	Basiswechsel, Rechnen mit Matrizen
+**9** |	Invertierbare Matrizen, Determinanten und Anwendungen	
+**10** | Lineare Gleichungssysteme
+**11** | Gauß-Algorithmus und andere Lösungsmethoden	
 **12** | Projektive Geometrie
 
 
