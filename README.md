@@ -26,7 +26,9 @@ Nr | Themen | Verweise
 ### Skalar-, Vektor und Spatprodukt, Vektorielle Raumgeometrie
 - Das Skalarprodukt zweier Vektoren
 - Vektor- und Spatprodukt
+- Analytische Geometrie von Geraden und Ebenen
 
+- Reelle Vektorräume und Unterräume
 
 
 ## Literatur
