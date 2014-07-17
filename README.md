@@ -28,8 +28,13 @@ Nr | Themen | Verweise
 - Vektor- und Spatprodukt
 - Analytische Geometrie von Geraden und Ebenen
 
+### Vektorräume, Linearkombinationen von Vektoren
 - Reelle Vektorräume und Unterräume
 
+
+- LineareUnabhängigkeit
+
+-  Basen für die vier Fundamentalrö̈ume
 
 ## Literatur
 
