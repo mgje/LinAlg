@@ -27,5 +27,7 @@ Nr | Themen
 ## Literatur
 
 - Anton, H. (1998). Lineare Algebra. Berlin: Spektrum.
+- A. Filler, Elementare Lineare Algebra, Spektrum Akademischer Verlag, Heidelberg, 2011. 
 - Gramlich, G. (2009). Lineare Algebra: Eine Einführung. München: Carl Hanser.
 - Linnemann, T. (2009). Vektoren: Raumvorstellung-Kalkül-Anwendung; Aufgaben mit Lösungen. Zürich: Orell Füssli
+- Lineare Algebra (Ch. Zehrt), [Vorlesung FS2012](http://jones.math.unibas.ch/~zehrtc/institut/vorlesungen/fs12/fw22/)
