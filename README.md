@@ -13,7 +13,7 @@ Nr | Themen | Verweise
 **5** |	Dimension, Matrizen und Matrixoperationen | Filler 227-249, Fischer 186-200
 **6** | Lineare Abbildungen | Filler 257-277, Gramlich 150-158
 **7** |	Beispiele von Darstellungsmatrizen, Linearitätsbedingungen	
-**8** |	Basiswechsel, Rechnen mit Matrizen
+**8** |	Basiswechsel, Rechnen mit Matrizen | Fischer 260 - 265
 **9** |	Invertierbare Matrizen, Determinanten und Anwendungen	| Gramlich 160-170
 **10** | Lineare Gleichungssysteme | Gramlich 9-46
 **11** | Gauß-Algorithmus und andere Lösungsmethoden	| Gramlich 9-46
