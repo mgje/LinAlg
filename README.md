@@ -34,7 +34,9 @@ Nr | Themen | Verweise
 
 - LineareUnabhängigkeit
 
--  Basen für die vier Fundamentalrö̈ume
+-  Basen für die vier Fundamentalräume
+-  Orthogonale Projektionen
+-  Orthogonal-und Orthonormalbasen
 
 ## Literatur
 
