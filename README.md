@@ -6,17 +6,17 @@ LinAlg
 
 Nr | Themen | Verweise
 --- | --- | ---
-**1** |	Vektoren in der Ebene und im Raum	| Filler p. 85-113
-**2**	| Skalar-, Vektor und Spatprodukt, Vektorielle Raumgeometrie | Filler p. 122-165
-**3** | Vektorräume, Linearkombinationen von Vektoren | Filler p. 113-121 , p. 167- 177
-**4** |	Lineare Abhängigkeit, Basisvektoren | Filler p. 178- 201
-**5** |	Dimension, Matrizen und Matrixoperationen | Filler p. 227 -249
-**6** | Lineare Abbildungen | Filler p.257 - 277
+**1** |	Vektoren in der Ebene und im Raum	| Filler 85-113, Gramlich 49-61
+**2**	| Skalar-, Vektor und Spatprodukt, Vektorielle Raumgeometrie | Filler 122-165, Gramlich 62-76
+**3** | Vektorräume, Linearkombinationen von Vektoren | Filler 113-121 , 167-177, Gramlich 89-105
+**4** |	Lineare Abhängigkeit, Basisvektoren | Filler 178-201, Gramlich 106-144
+**5** |	Dimension, Matrizen und Matrixoperationen | Filler 227-249, 
+**6** | Lineare Abbildungen | Filler 257-277, Gramlich 150-158
 **7** |	Beispiele von Darstellungsmatrizen, Linearitätsbedingungen	
 **8** |	Basiswechsel, Rechnen mit Matrizen
-**9** |	Invertierbare Matrizen, Determinanten und Anwendungen	
-**10** | Lineare Gleichungssysteme
-**11** | Gauß-Algorithmus und andere Lösungsmethoden	
+**9** |	Invertierbare Matrizen, Determinanten und Anwendungen	| Gramlich 160-170
+**10** | Lineare Gleichungssysteme | Gramlich 9-46
+**11** | Gauß-Algorithmus und andere Lösungsmethoden	| Gramlich 9-46
 **12** | Projektive Geometrie
 
 
