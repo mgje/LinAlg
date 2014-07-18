@@ -11,8 +11,8 @@ Nr | Themen | Verweise
 **3** | Vektorräume, Linearkombinationen von Vektoren | Filler 113-121 , 167-177, Gramlich 89-105
 **4** |	Lineare Abhängigkeit, Basisvektoren | Filler 178-201, Gramlich 106-144
 **5** |	Dimension, Matrizen und Matrixoperationen | Filler 227-249, Fischer 186-200
-**6** | Lineare Abbildungen, Linearitätsbedingungen	| Filler 257-277, Gramlich 150-158
-**7** |	Beispiele von Darstellungsmatrizen (Spiegelung, Drehung, orthogonal Projektion)
+**6** | Lineare Abbildungen, Linearitätsbedingungen	| Filler 257-277, Gramlich 150-154
+**7** |	Beispiele von Darstellungsmatrizen (Spiegelung, Drehung, orthogonal Projektion) | Gramlich 155-158
 **8** |	Basiswechsel, Rechnen mit Matrizen | Fischer 260 - 265
 **9** |	Invertierbare Matrizen, Determinanten und Anwendungen	| Gramlich 160-170
 **10** | Lineare Gleichungssysteme | Gramlich 9-46
