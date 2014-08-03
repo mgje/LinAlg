@@ -21,6 +21,7 @@ Nr | Themen | Verweise
 
 ### Vektoren in der Ebene und im Raum
 - Vektoren in physikalischen und geometrischen Kontexten 
+- Norm eines Vektors, Vektorarithmetik
 - Linearkombinationen von Vektoren
 
 ### Skalar-, Vektor und Spatprodukt, Vektorielle Raumgeometrie
@@ -32,14 +33,14 @@ Nr | Themen | Verweise
 
 ### Vektorräume, Linearkombinationen von Vektoren
 - Reelle Vektorräume und Unterräume
-- Linear Unabhängigkeit
 - Der Begriff des Vektorraumes, Beispiele 
 - Lineare Hüllen, Erzeugendensysteme, lineare Abhängikeit
 
 ### Lineare Abhöngigkeit, Basivektoren
+- Linear Unabhängigkeit
+- Basis und Dimension
 
 ### Dimension, Matrizen und Matrixoperationen
--  Basis und Dimension
 -  Euklidische Vektor- und Punkträume
 -  Matrizenmultiplikation und -inversion
 -  Begriffsbestimmung, Rang von Matrizen
@@ -49,13 +50,14 @@ Nr | Themen | Verweise
 -  Einige Eigenschaften linearer Abbildungen
 -  Orthogonale Projektionen
 -  Orthogonal-und Orthonormalbasen
+-  Orthogonalisierungsverfahren
 
 ### Beispiele Darstellungsmatrizen R2
-
-
-
+- Die Geometrie lineareer Operatoren auf R2
 
 ### Basiswechsel
+- Diagonalisierung
+- Matrixdarstellung linearer Transformationen
 
 ### Invetierbare Matrizen, Determinanten
 -  Die Determinante einer (2,2)-Matrix 
