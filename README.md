@@ -41,37 +41,24 @@ Nr | Themen | Verweise
 -  Lineare Abbildungen
 -  Die Determinante einer (2,2)-Matrix 
 -  Verallgemeinerung auf (n,n)-Matrizen 
+
+
 -  Das Spatprodukt – Berechnung von Volumina
 -  Beschreibung von Geraden durch Parametergleichungen 
 -  Metrische Geometrie von Geraden und Ebenen
 -  Der Begriff des Vektorraumes, Beispiele 
 -  Untervektorröuume
--  Lineare Hüllen, Erzeugendensysteme, lineare Abhängikeii
--  Basis und Dimensiont
--  Euklidische Vektor- und Punktra ̈ume
+-  Lineare Hüllen, Erzeugendensysteme, lineare Abhängikeit
+-  Basis und Dimension
+-  Euklidische Vektor- und Punkträume
 -  Begriffsbestimmung, Ra ̈nge von Matrizen
 -  Matrizenmultiplikation und -inversion
--   Einige Eigenschaften linearer Abbildungen
--   MultiplikationvonVektoren
--   Berechnung von Determinanten
+-  Einige Eigenschaften linearer Abbildungen
+-  Multiplikation von Vektoren
+-  Berechnung von Determinanten
 
 
-\$\$
-\begin{align*}
-  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-      \vdots & \ddots & \vdots \\
-      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-    \end{array} \right)
-  \left( \begin{array}{c}
-      y_1 \\
-      \vdots \\
-      y_n
-    \end{array} \right)
-\end{align*}
-$$
+
 
 
 
