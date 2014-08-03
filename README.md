@@ -16,7 +16,7 @@ Nr | Themen | Verweise
 **8** |	Basiswechsel, Rechnen mit Matrizen | Fischer 260 - 265
 **9** |	Invertierbare Matrizen, Determinanten und Anwendungen	| Gramlich 160-170
 **10** | Lineare Gleichungssysteme | Gramlich 9-46
-**11** | Gauß-Algorithmus und andere Lösungsmethoden	| Gramlich 9-46
+**11** | Gauss-Algorithmus und andere Lösungsmethoden	| Gramlich 9-46
 **12** | Projektive Geometrie
 
 ### Vektoren in der Ebene und im Raum
@@ -30,7 +30,7 @@ Nr | Themen | Verweise
 
 ### Vektorräume, Linearkombinationen von Vektoren
 - Reelle Vektorräume und Unterräume
-
+- Linear Unabhängigkeit
 
 ### Lineare Abhöngigkeit, Basivektoren
 
@@ -48,13 +48,14 @@ Nr | Themen | Verweise
 
 ### Gauss-Algorithmus
 
+### Projektive Geometrie
 
 
 
 
 
 
-- LineareUnabhängigkeit
+
 
 -  Basen für die vier Fundamentalräume
 -  Orthogonale Projektionen
