@@ -32,6 +32,28 @@ Nr | Themen | Verweise
 - Reelle Vektorräume und Unterräume
 
 
+### Lineare Abhöngigkeit, Basivektoren
+
+### Dimension, Matrizen und Matrixoperationen
+
+### Lin Abbildung, Linearitätsbedingugnen
+
+### Beispiele Darstellungsmatrizen R2
+
+### Basiswechsel
+
+### Invetierbare Matrizen, Determinanten
+
+### Lin Gleichungssysteme
+
+### Gauss-Algorithmus
+
+
+
+
+
+
+
 - LineareUnabhängigkeit
 
 -  Basen für die vier Fundamentalräume
