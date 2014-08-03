@@ -53,8 +53,12 @@ Nr | Themen | Verweise
 -  Matrizenmultiplikation und -inversion
 -   Einige Eigenschaften linearer Abbildungen
 -   MultiplikationvonVektoren
--   BerechnungvonDeterminanten
+-   Berechnung von Determinanten
 -   
+
+$$
+\int_a^b x^2
+$$
 
 ## Literatur
 
