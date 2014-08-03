@@ -27,60 +27,45 @@ Nr | Themen | Verweise
 - Das Skalarprodukt zweier Vektoren
 - Vektor- und Spatprodukt
 - Analytische Geometrie von Geraden und Ebenen
+- Beschreibung von Geraden durch Parametergleichungen 
+- Metrische Geometrie von Geraden und Ebenen
 
 ### Vektorräume, Linearkombinationen von Vektoren
 - Reelle Vektorräume und Unterräume
 - Linear Unabhängigkeit
+- Der Begriff des Vektorraumes, Beispiele 
+- Lineare Hüllen, Erzeugendensysteme, lineare Abhängikeit
 
 ### Lineare Abhöngigkeit, Basivektoren
 
 ### Dimension, Matrizen und Matrixoperationen
+-  Basis und Dimension
+-  Euklidische Vektor- und Punkträume
+-  Matrizenmultiplikation und -inversion
+-  Begriffsbestimmung, Rang von Matrizen
 
 ### Lin Abbildung, Linearitätsbedingugnen
+-  Basen für die vier Fundamentalräume
+-  Einige Eigenschaften linearer Abbildungen
+-  Orthogonale Projektionen
+-  Orthogonal-und Orthonormalbasen
 
 ### Beispiele Darstellungsmatrizen R2
+
+
+
 
 ### Basiswechsel
 
 ### Invetierbare Matrizen, Determinanten
+-  Die Determinante einer (2,2)-Matrix 
+-  Verallgemeinerung auf (n,n)-Matrizen 
 
 ### Lin Gleichungssysteme
 
 ### Gauss-Algorithmus
 
 ### Projektive Geometrie
-
-
-
-
-
-
-
-
--  Basen für die vier Fundamentalräume
--  Orthogonale Projektionen
--  Orthogonal-und Orthonormalbasen
-
--  Lineare Abbildungen
--  Die Determinante einer (2,2)-Matrix 
--  Verallgemeinerung auf (n,n)-Matrizen 
-
-
--  Das Spatprodukt – Berechnung von Volumina
--  Beschreibung von Geraden durch Parametergleichungen 
--  Metrische Geometrie von Geraden und Ebenen
--  Der Begriff des Vektorraumes, Beispiele 
--  Untervektorröuume
--  Lineare Hüllen, Erzeugendensysteme, lineare Abhängikeit
--  Basis und Dimension
--  Euklidische Vektor- und Punkträume
--  Begriffsbestimmung, Ra ̈nge von Matrizen
--  Matrizenmultiplikation und -inversion
--  Einige Eigenschaften linearer Abbildungen
--  Multiplikation von Vektoren
--  Berechnung von Determinanten
-
-
 
 
 
