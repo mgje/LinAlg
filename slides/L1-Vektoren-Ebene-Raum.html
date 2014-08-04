@@ -78,11 +78,98 @@ Die Vektoren \\( \vec{u} \\) und \\( \vec{v} \\) werden addiert, man schreibt \\
 
 
 ![Addition](media/L1_additionuv.png)
+---
+### (Rechenregeln für geometrische Vektoren)
+
+* Kommutativgesetz: Für beliebige Vektoren \\( \vec{u}, \vec{v} \\)  gilt \\( \vec{u} + \vec{v} = \vec{v} +\vec{u}\\) .
+* Assoziativgesetz: Für beliebige Vektoren \\( \vec{u}, \vec{v}, \vec{w} \\) gilt: \\( (\vec{u}+ \vec{v})+ \vec{w} = \vec{u} + (\vec{v}+ \vec{w}) \\) 
+* Existenz des Nullvektors: Für jeden Vektor \\( \vec{v} \\) gilt \\( \vec{v} + \vec{0} = \vec{v} \\) 
+* Existenz negativer Vektoren: Zu jedem Vektor \\( \vec{v} \\) gibt es einen Vektor \\( -\vec{v} \\) mit \\( \vec{v}+ (-\vec{v}) = \vec{0}\\).
+---
+### Skalare Multiplikation
+Für alle \\( c,d \in \mathbb{R} \\) und für alle geometrischen Vektoren \\( \vec{v}, \vec{w} \\) gelten die folgenden Eigenschaften:
+
+* Distributivgesetz: \\(  c · (\vec{v} + \vec{w}) = c · \vec{v} + c · \vec{w}\\)
+* Distributivgesetz: \\(  (c + d) · \vec{v} = c · \vec{v} + d · \vec{v}\\)
+* Assoziativgesetz:  \\( c·(d·\vec{v}) = (cd)·\vec{v}\\)
+* 1·\vec{v}=\vec{v}.
+---
+### Vektoren in der Ebene
+
+Gegeben sind die beiden Vektoren \\( \vec{u} \\) und \\( \vec{u} \\)  Konstruieren Sie nun den Vektor 
+\\( 2\vec{u}-\frac{1}{2} \vec{v} \\).
+
+![VektorAddition](media/L1_2uv.png)
 
 ---
-## Norm eines Vektors, Vektorarithmetik
+## Vektoren in Koordinatensystemen
+
+In der Ebene, die wir uns als Zeichenebene vorstellen, entsteht ein __rechtwinkliges Koordinatensystem__ (kartesisches System) durch Vorgabe eines Punktes O und zweier aufeinander senkrecht stehender Zahlengeraden, der x- und der y-Achse, deren Nullpunkt jeweils in O liegt.
+
+\\(  \mathbb{R}^2= \\{(x,y)|\mbox{ } x \in \mathbb{R}, y \in \mathbb{R} \\} \\)
+
+Dabei muss die y-Achse durch eine positive Drehung (gegen den Uhrzeigersinn) aus der x- Achse hervorgehen.
 
 ---
+Ein Vektor \\( \vec{v} \\) in der Ebene \\( \mathbb{R}^2 \\) ist ein Zahlenpaar \\( (x, y) \\), also \\( \vec{v} = (x, y) \\).
+
+![Koordsystem](media/L1_KoordSystem.png)
+
+__Punkt P__   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  __Ortsvektor__ \\( \vec{v} \\)
+
+--- 
+\\( P\_1 = (x\_1,y\_1) \\) und \\( P\_2 = (x\_2,y\_2) \\) sind zwei Punkte der Ebene \\( \mathbb{R}^2 \\) . Wie lautet der Vektor \\( \overrightarrow{P\_1P\_2} \\) 
+
+![VektorzwPunkten](media/L1_VektorzwPunkten.png)
+
+\\( \overrightarrow{P\_1P\_2} = \left(\begin{matrix} x\_2-x\_1 \\\\ y\_2-y\_1 \end{matrix}\right) \\) 
+---
+### Aufgabe
+
+Es sind die Vektoren \\( \vec{u} = (2, 3, −1) \\) und \\( \vec{v} = (3, −4, 2) \\) gegeben. 
+
+Berechnen Sie \\( 3\vec{u}−2\vec{v} \\).
+
+---
+Vektoren können in Zeilen oder Spaltenschreibweise dargestellt werden.
+
+\\(  \vec{u} = (u\_1, u\_2) \mbox{ oder } \vec{u} = \left(\begin{matrix} u\_1 \\\\ u\_2 \end{matrix}\right)  \\)
+
+
+
+--- 
+## Norm eines Vektors
+
+![VektorzwPunkten](media/L1_laengeVektor.png)
+
+Nach dem Satz des Pythagoras gilt \\(  |\vec{v}| = \sqrt{v\_1^2+v\_2^2} \\) für  \\(  \vec{v} \in \mathbb{R}^2 \\) und \\(  |\vec{v}| = \sqrt{v\_1^2+v\_2^2++v\_3^2} \\) für  \\(  \vec{v} \in \mathbb{R}^3 \\) 
+
+---
+### Abstand zweier Punkte
+
+<br>
+
+Der Abstand zweier Punkte \\( P\_1 = (x\_1, y\_1, z\_1) \\) und \\( P\_2 = (x\_2, y\_2, z\_2)\\) im Raum ist
+
+<br>
+
+\\( \overrightarrow{P\_1P\_2} = \sqrt{(x\_2-x\_1)^2+(y\_2-y\_1)^2+(z\_2-z\_1)^2} \\)
+---
+
+### Skalarprodukt
+
+![Skalarprodukt](media/L1_SkalarProdukt.png)
+
+
+Unter dem Winkel \\( \phi \\) zwischen den Vektoren \\(  \vec{u} \\)  und \\(  \vec{v} \\) versteht man den kleineren der Winkel
+
+---
+
+
+
+
+
+--- 
 ## Linearkombinationen von Vektoren
 
 </script>
@@ -93,153 +180,6 @@ Die Vektoren \\( \vec{u} \\) und \\( \vec{v} \\) werden addiert, man schreibt \\
 
 		<script src="../reveal/lib/js/head.min.js"></script>
 		<script src="../reveal/js/reveal.min.js"></script>
-
-		<!-- JS Animation Matrix Multiplikation -->
-		<script>
-		
-        // Animation Show - 
-		Reveal.addEventListener( 'fragmentshown', function() {
-    		var f_Ind = Reveal.getIndices().f;
-    		var er = null;
-			var ec = null;
-
-    		//alert(f_Ind);
-    		switch(f_Ind){
-    			case 0:
-    				er = document.getElementById("row1");
-    				ec = document.getElementById("col1");
-    				er.setAttribute("display","inline");
-    				ec.setAttribute("display","inline");
-    				er = document.getElementById("row2");
-    				ec = document.getElementById("col4");
-    				er.setAttribute("display","none");
-    				ec.setAttribute("display","none");
-    				break;
-    			case 1:
-    				ec = document.getElementById("col1");
-    				ec.setAttribute("display","none");
-    				ec = document.getElementById("col2");
-    				ec.setAttribute("display","inline");
-    				break;
-    			case 2:
-    				ec = document.getElementById("col2");
-    				ec.setAttribute("display","none");
-    				ec = document.getElementById("col3");
-    				ec.setAttribute("display","inline");
-    				break;
-    			case 3:
-    				ec = document.getElementById("col3");
-    				ec.setAttribute("display","none");
-    				ec = document.getElementById("col4");
-    				ec.setAttribute("display","inline");
-    				break;
-    			case 4:
-    				ec = document.getElementById("col4");
-    				ec.setAttribute("display","none");
-    				ec = document.getElementById("col1");
-    				ec.setAttribute("display","inline");
-    				er = document.getElementById("row1");
-    				er.setAttribute("display","none");
-    				er = document.getElementById("row2");
-    				er.setAttribute("display","inline");
-    				break;
-    			case 5:
-    				ec = document.getElementById("col1");
-    				ec.setAttribute("display","none");
-    				ec = document.getElementById("col2");
-    				ec.setAttribute("display","inline");
-    				break;
-    			case 6:
-    				ec = document.getElementById("col2");
-    				ec.setAttribute("display","none");
-    				ec = document.getElementById("col3");
-    				ec.setAttribute("display","inline");
-    				break;
-    			case 7:
-    				ec = document.getElementById("col3");
-    				ec.setAttribute("display","none");
-    				ec = document.getElementById("col4");
-    				ec.setAttribute("display","inline");
-    				break;
-    				
-    			default:
-    				break;
-    		}
-		}, false );
-
- 		// Animation hidden 
-		Reveal.addEventListener( 'fragmenthidden', function() {
-    		var f_Ind = Reveal.getIndices().f;
-    		var er = null;
-			var ec = null;
-
-    		//alert(f_Ind);
-    		switch(f_Ind){
-    			case -1:
-    				er = document.getElementById("row1");
-    				ec = document.getElementById("col1");
-    				er.setAttribute("display","none");
-    				ec.setAttribute("display","none");
-    				er = document.getElementById("row2");
-    				ec = document.getElementById("col4");
-    				er.setAttribute("display","none");
-    				ec.setAttribute("display","none");
-    				break;
-    			case 0:
-    				ec = document.getElementById("col1");
-    				ec.setAttribute("display","inline");
-    				ec = document.getElementById("col2");
-    				ec.setAttribute("display","none");
-    				break;
-    			case 1:
-    				ec = document.getElementById("col2");
-    				ec.setAttribute("display","inline");
-    				ec = document.getElementById("col3");
-    				ec.setAttribute("display","none");
-    				break;
-    			case 2:
-    				ec = document.getElementById("col3");
-    				ec.setAttribute("display","inline");
-    				ec = document.getElementById("col4");
-    				ec.setAttribute("display","none");
-    				break;
-    			case 3:
-    				ec = document.getElementById("col4");
-    				ec.setAttribute("display","inline");
-    				ec = document.getElementById("col1");
-    				ec.setAttribute("display","none");
-    				er = document.getElementById("row1");
-    				er.setAttribute("display","inline");
-    				er = document.getElementById("row2");
-    				er.setAttribute("display","none");
-    				break;
-    			case 4:
-    				ec = document.getElementById("col1");
-    				ec.setAttribute("display","inline");
-    				ec = document.getElementById("col2");
-    				ec.setAttribute("display","none");
-    				break;
-    			case 5:
-    				ec = document.getElementById("col2");
-    				ec.setAttribute("display","inline");
-    				ec = document.getElementById("col3");
-    				ec.setAttribute("display","none");
-    				break;
-    			case 6:
-    				ec = document.getElementById("col3");
-    				ec.setAttribute("display","inline");
-    				ec = document.getElementById("col4");
-    				ec.setAttribute("display","none");
-    				break;
-    				
-    			default:
-    				break;
-    		}
-  		
-		}, false );
-		</script>
-		<!-- End Animation -->
-
 
 		<script>
 
