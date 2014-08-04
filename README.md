@@ -31,12 +31,12 @@ Nr | Themen | Verweise
 - Beschreibung von Geraden durch Parametergleichungen 
 - Metrische Geometrie von Geraden und Ebenen
 
-### Vektorräume, Linearkombinationen von Vektoren
+### Vektorräume
 - Reelle Vektorräume und Unterräume
 - Der Begriff des Vektorraumes, Beispiele 
 
 
-### Lineare Abhöngigkeit, Basivektoren
+###  Linearkombinationen, Lineare Abhöngigkeit, Basivektoren
 - Lineare Hüllen, Erzeugendensysteme, lineare Abhängikeit
 - Linear Unabhängigkeit
 - Basis und Dimension

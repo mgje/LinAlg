@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<title>LinAlg</title>
+
+		<meta name="description" content="TODO">
+		<meta name="author" content="Martin Guggisberg">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+		<link rel="stylesheet" href="../reveal/css/reveal.min.css">
+		<link rel="stylesheet" href="../reveal/css/theme/mw.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../reveal/lib/css/github.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="../reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="../reveal/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+				
+<!-- Einleitung -->
+<section data-markdown data-separator="---" data-vertical="--" data-background="#FFFFFF">
+<script type="text/template">
+## Lin Abbildung, Linearitätsbedingugnen
+---
+## Basen für die vier Fundamentalräume
+
+---
+## Orthogonale Projektionen
+
+---
+## Orthogonal-und Orthonormalbasen
+---
+## Orthogonalisierungsverfahren
+
+
+
+</script>
+</section>
+			</div>
+
+		</div>
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.min.js"></script>
+
+		<!-- JS Animation Matrix Multiplikation -->
+		<script>
+		
+        // Animation Show - 
+		Reveal.addEventListener( 'fragmentshown', function() {
+    		var f_Ind = Reveal.getIndices().f;
+    		var er = null;
+			var ec = null;
+
+    		//alert(f_Ind);
+    		switch(f_Ind){
+    			case 0:
+    				er = document.getElementById("row1");
+    				ec = document.getElementById("col1");
+    				er.setAttribute("display","inline");
+    				ec.setAttribute("display","inline");
+    				er = document.getElementById("row2");
+    				ec = document.getElementById("col4");
+    				er.setAttribute("display","none");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 1:
+    				ec = document.getElementById("col1");
+    				ec.setAttribute("display","none");
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","inline");
+    				break;
+    			case 2:
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","none");
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","inline");
+    				break;
+    			case 3:
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","none");
+    				ec = document.getElementById("col4");
+    				ec.setAttribute("display","inline");
+    				break;
+    			case 4:
+    				ec = document.getElementById("col4");
+    				ec.setAttribute("display","none");
+    				ec = document.getElementById("col1");
+    				ec.setAttribute("display","inline");
+    				er = document.getElementById("row1");
+    				er.setAttribute("display","none");
+    				er = document.getElementById("row2");
+    				er.setAttribute("display","inline");
+    				break;
+    			case 5:
+    				ec = document.getElementById("col1");
+    				ec.setAttribute("display","none");
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","inline");
+    				break;
+    			case 6:
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","none");
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","inline");
+    				break;
+    			case 7:
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","none");
+    				ec = document.getElementById("col4");
+    				ec.setAttribute("display","inline");
+    				break;
+    				
+    			default:
+    				break;
+    		}
+		}, false );
+
+ 		// Animation hidden 
+		Reveal.addEventListener( 'fragmenthidden', function() {
+    		var f_Ind = Reveal.getIndices().f;
+    		var er = null;
+			var ec = null;
+
+    		//alert(f_Ind);
+    		switch(f_Ind){
+    			case -1:
+    				er = document.getElementById("row1");
+    				ec = document.getElementById("col1");
+    				er.setAttribute("display","none");
+    				ec.setAttribute("display","none");
+    				er = document.getElementById("row2");
+    				ec = document.getElementById("col4");
+    				er.setAttribute("display","none");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 0:
+    				ec = document.getElementById("col1");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 1:
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 2:
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col4");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 3:
+    				ec = document.getElementById("col4");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col1");
+    				ec.setAttribute("display","none");
+    				er = document.getElementById("row1");
+    				er.setAttribute("display","inline");
+    				er = document.getElementById("row2");
+    				er.setAttribute("display","none");
+    				break;
+    			case 4:
+    				ec = document.getElementById("col1");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 5:
+    				ec = document.getElementById("col2");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","none");
+    				break;
+    			case 6:
+    				ec = document.getElementById("col3");
+    				ec.setAttribute("display","inline");
+    				ec = document.getElementById("col4");
+    				ec.setAttribute("display","none");
+    				break;
+    				
+    			default:
+    				break;
+    		}
+  		
+		}, false );
+		</script>
+		<!-- End Animation -->
+
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				keyboard: true,
+				overview: true,
+				slideNumber: true,
+
+				width: 1024,
+    			height: 768,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				//parallaxBackgroundSize: '2100px 900px',
+				parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal
+				dependencies: [
+					{ src: '../reveal/plugin/math/math.js', async: true },
+					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
