@@ -8,8 +8,8 @@ Nr | Themen | Verweise
 --- | --- | ---
 **1** |	Vektoren in der Ebene und im Raum	| Filler 85-113, Gramlich 49-61
 **2**	| Skalar-, Vektor und Spatprodukt, Vektorielle Raumgeometrie | Filler 122-165, Gramlich 62-76
-**3** | Vektorräume, Linearkombinationen von Vektoren | Filler 113-121 , 167-177, Gramlich 89-105
-**4** |	Lineare Abhängigkeit, Basisvektoren | Filler 178-201, Gramlich 106-144
+**3** | Vektorräume| Filler 113-121 , 167-177, Gramlich 89-105
+**4** |	Linearkombinationen, Lineare Abhängigkeit, Basisvektoren | Filler 178-201, Gramlich 106-144
 **5** |	Dimension, Matrizen und Matrixoperationen | Filler 227-249, Fischer 186-200
 **6** | Lineare Abbildungen, Linearitätsbedingungen	| Filler 257-277, Gramlich 150-154
 **7** |	Beispiele von Darstellungsmatrizen (Spiegelung, Drehung, orthogonal Projektion) |Gramlich 155-158
@@ -34,9 +34,10 @@ Nr | Themen | Verweise
 ### Vektorräume, Linearkombinationen von Vektoren
 - Reelle Vektorräume und Unterräume
 - Der Begriff des Vektorraumes, Beispiele 
-- Lineare Hüllen, Erzeugendensysteme, lineare Abhängikeit
+
 
 ### Lineare Abhöngigkeit, Basivektoren
+- Lineare Hüllen, Erzeugendensysteme, lineare Abhängikeit
 - Linear Unabhängigkeit
 - Basis und Dimension
 
