@@ -352,16 +352,91 @@ Bestimmen Sie die orthogonale Projektion von \\(  \vec{u} \\) auf den den Vektor
 \\(  Proj_a(u) = \frac{\vec{u}\vec{a}}{|\vec{a}|^2} \vec{a} = \frac{15}{21} \left(\begin{matrix} 4 \\\\ -1 \\\\ 2\end{matrix}\right) \\)
 
 ---
----
----
+### Länge Orthogonalprojektion
+
+![orthogonale Länge](media/L1_laengeorthogonal.png)
+
+\\(  |Proj_a(u)| =  \frac{|\vec{u} \vec{a}|}{|\vec{a}|} = |\vec{u}| \cdot \cos(\phi) \\)
 
 ---
----
----
+
+### Kreuzprodukt nur für \\( \mathbb{R}^3 \\) 
+
+physikalische Anwendungen
+
+Drehmoment, Lorenzkraft, Drehimpuls
 
 ---
+
+Unter dem Kreuzprodukt \\(  \vec{u} ×  \vec{v} \\)   zweier räumlicher Vektoren \\(  \vec{u} \\) und \\(  \vec{v} \\)  versteht man den eindeutig bestimmten Vektor mit folgenden Eigenschaften:
+
+* \\(  \vec{u} ×  \vec{v} \\) ist sowohl zu \\(  \vec{u} \\) und auch zu \\( \vec{v} \\) orthogonal.
+* Die Länge des Vektors \\(  \vec{u} ×  \vec{v} \\) ist gleich dem Produkt aus den Längen der Vektoren \\(  \vec{u} \\) und \\(  \vec{v} \\) und dem Sinus des von ihnen eingeschlossenen Winkels \\(  \phi \\).
+
+\\(  |\vec{u} × \vec{v}| = |\vec{u}| \cdot |\vec{v}| \cdot \sin(\phi) \\)
+
+* Die Vektoren \\(  \vec{u} \\), \\(  \vec{v} \\) und \\( \vec{u} × \vec{v} \\) bilden in dieser Reihenfolge ein Rechtssystem.
+
 ---
+![Kreuzprodukt](media/L1_Kreuzprodukt.png)
+
+Für den Flächeninhalt \\( A \\) des aufgespannenten Parallelogramms gilt:
+
+\\( A = (Grundlinien) \cdot (Höhe) =  |\vec{u}| \cdot h = |\vec{u}| \cdot |\vec{v}| \cdot \sin(\phi)\\)
+
+
 ---
+### Kriterium für parallele Vektoren im Raum
+
+
+Zwei vom Nullvektor verschiedene Vektoren \\(  \vec{u} \\)  und \\(  \vec{v} \\)  sind genau dann parallel, wenn ihr Kreuzprodukt der Nullvektor ist:
+
+\\(  \vec{u} × \vec{v} = \vec{0} \\) genau dann, wenn \\(  \vec{u} \\)  und \\(  \vec{v} \\)  parallel sind.
+
+---
+### Rechenregeln des Kreuzprodukts
+
+* \\(  \vec{u} × \vec{v} = - \vec{v} × \vec{u} \\)(Anti-Kommutativgesetz)
+* \\(  \vec{u} × (\vec{v}+\vec{w}) = \vec{u} × \vec{v} + \vec{u} × \vec{w}\\)(Distributivgesetz)
+* \\(  (\vec{u} + \vec{v}) × \vec{w} = \vec{u} × \vec{w} + \vec{v} × \vec{w}\\)(Distributivgesetz)
+* \\(  c (\vec{u}  × \vec{v}) = (c\vec{u}) × \vec{v} = \vec{u} × (c\vec{v})\\)(Assoziativgesetz)
+* \\(  \vec{u} × \vec{0} = \vec{0} × \vec{u} = \vec{0}  \\)
+* \\(  \vec{u} × \vec{u} = \vec{0}  \\)
+
+---
+### Koordinatendarstellung des Kreuzproduktes
+
+Sind  \\( \vec{u} = \left(\begin{matrix} u\_1 \\\\ u\_2 \\\\ u\_3\end{matrix}\right)\\) und \\(\vec{v} = \left(\begin{matrix} v\_1 \\\\ v\_2 \\\\ v\_3\end{matrix}\right)\\) zwei Vektoren im Raum so ist das Kreuzprodukt durch 
+
+\\(  \vec{u} × \vec{v} = \left(\begin{matrix} u\_2v\_3 − u\_3v\_2 \\\\ u\_3v\_1 −u\_1v\_3 \\\\ u\_1v\_2 −u\_2v\_1\end{matrix}\right)
+ \\)
+berechenbar. 
+
+---
+###Flächeninhalt eines Dreiecks
+
+Berechnen Sie den Flächeninhalt des Dreiecks mit den Eckpunkten \\( P\_1 = (2,2,0)\\) , \\( P\_2 = (−1,0,2) \\) und \\( P\_3 = (0,4,3) \\).
+
+Lösung: Der Flächeninhalt des Dreiecks ist die Hälfte des Inhalts des Parallelogramms, das von den Vektoren \\(\overrightarrow{P\_1P\_2} \\) und \\(\overrightarrow{P\_1P\_3} \\) aufgespannt wird.
+--
+
+\\(\overrightarrow{P\_1P\_2} = \left(\begin{matrix} -1 -2 \\\\ 0 -2 \\\\ 2-0\end{matrix}\right)=  \left(\begin{matrix} -3 \\\\ -2 \\\\ 2\end{matrix}\right)\\) 
+
+\\(\overrightarrow{P\_1P\_3} = \left(\begin{matrix} 0 -2 \\\\ 4 -2 \\\\ 3-0\end{matrix}\right)=  \left(\begin{matrix} -2 \\\\ 2 \\\\ 3\end{matrix}\right)\\) 
+
+--
+
+\\(\overrightarrow{P\_1P\_2} × \overrightarrow{P\_1P\_3} = \left(\begin{matrix} -3 \\\\ -2 \\\\ 2\end{matrix}\right) × \left(\begin{matrix} -2 \\\\ 2 \\\\ 3\end{matrix}\right) = \left(\begin{matrix} -10 \\\\ 5 \\\\ -10\end{matrix}\right) \\) 
+
+--
+
+$$
+\begin{align}
+ \frac{1}{2} | \overrightarrow{P\_1P\_2} × \overrightarrow{P\_1P\_3} | &= \frac{1}{2} \sqrt{100+25+100} \\\\
+	&= \frac{1}{2} \sqrt{225} \\\\
+	&= \frac{15}{2} 
+\end{align}
+$$
 ---
 ---
 ---
