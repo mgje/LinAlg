@@ -185,11 +185,190 @@ $$
 * Für \\(  \phi = 180° \\) haben die beiden Vektoren entgegengesetzte Richtung,es gilt \\(  \vec{u} · \vec{v} = -|\vec{u}| · |\vec{v}|\\)
 
 * Für \\(  \phi = 90° \\) ist \\( \cos \phi = 0\\), also ist  \\(  \vec{u} · \vec{v} = 0 \\)
+---
+### Beispiel
+
+<br>
+
+Die Vektoren \\( \vec{u} = \left(\begin{matrix} 0 \\\\ 0 \\\\ 1\end{matrix}\right)\\) und \\(\vec{v} = \left(\begin{matrix} 0 \\\\ 2 \\\\ 2\end{matrix}\right)\\) bilden einen Winkel von \\( 45° \\).
+
+Berechnen Sie das Skalarprodukt
+
+--
+
+\\( \vec{u} \cdot \vec{v} = |\vec{u}| |\vec{v}| \cos(\phi) \\)
+
+<br>
+
+\\(= \sqrt{0^2+0^2+1^2} \sqrt{0^2+2^2+2^2}\frac{1}{\sqrt{2}}\\)
+
+<br>
+
+\\(=\sqrt{8}\frac{1}{\sqrt{2}}=2\\)
+---
+### Koordinatenform des Skalarproduktes
+
+Nach dem Kosinussatz gilt:
+
+\\( |\vec{v}-\vec{u}|^2 = |\vec{u}|^2 + |\vec{v}|^2 - 2 |\vec{u}| |\vec{v}| \cos(\phi) \\)
+
+![Cosinussatz](media/L1_cossatz.png)
+---
+### Koordinatenform des Skalarproduktes
+
+Umformen ergibt
+
+\\(  |\vec{u}| |\vec{v}| \cos(\phi) = \frac{1}{2} \left(|\vec{u}|^2+ |\vec{v}|^2 - |\vec{v}-\vec{u}|^2\right) \\)
+
+oder:
+
+\\(  \vec{u} \cdot \vec{v} = \frac{1}{2} \left(|\vec{u}|^2+ |\vec{v}|^2 - |\vec{v}-\vec{u}|^2\right) \\)
+
+--- 
+Mit \\(  \vec{u} = \left(\begin{matrix} u\_1 \\\\ u\_2 \\\\ u\_3\end{matrix}\right)\\) und \\(  \vec{v} = \left(\begin{matrix} v\_1 \\\\ v\_2 \\\\ v\_3\end{matrix}\right)\\) 
 
 
+ist
+
+\\( |\vec{u}|^2 = u\_1^2+u\_2^2+u\_3^2 \\)
+
+\\( |\vec{v}|^2 = v\_1^2+v\_2^2+v\_3^2 \\)
+--- 
+\\( |\vec{u}-\vec{v}|^2 = (u\_1-v\_1)^2+(u\_2-v\_12)^2+(u\_3-v\_3)^2 \\)
+
+
+\\( = u\_1^2 + v\_1^2  - 2 u\_1 v\_1 + u\_2^2 + v\_2^2  - 2 u\_2 v\_2 + u\_3^2 + v\_3^2  - 2 u\_3 v\_3  \\)
+
+
+\\( = u\_1^2 + u\_2^2+ u\_3^2  + v\_1^2 + v\_2^2 + v\_3^2  -2u\_1 v\_1 -2u\_2 v\_2 -2u\_3 v\_3\\)
+
+
+\\( = |\vec{u}|^2 + |\vec{v}|^2 - 2 (u\_1 v\_1 +u\_2 v\_2 + u\_3 v\_3 ) \\)
 
 
 --- 
+Alles zusammen:
+
+\\(  \vec{u} \cdot \vec{v} = \frac{1}{2} \left(|\vec{u}|^2+ |\vec{v}|^2 - |\vec{v}-\vec{u}|^2\right) \\)
+
+\\(  = \frac{1}{2} \left(|\vec{u}|^2+ |\vec{v}|^2 - \left( |\vec{u}|^2 + |\vec{v}|^2 - 2 (u\_1 v\_1 +u\_2 v\_2 + u\_3 v\_3 )  \right) \right) \\)
+
+\\(  = u\_1 v\_1 +u\_2 v\_2 + u\_3 v\_3  \\)
+
+--- 
+
+### Nochmals das Beispiel
+
+<br>
+
+Berechnen Sie das Skalarprodukt \\( \vec{u} \cdot \vec{v} \\) mit
+
+\\( \vec{u} = \left(\begin{matrix} 0 \\\\ 0 \\\\ 1\end{matrix}\right)\\) und \\(\vec{v} = \left(\begin{matrix} 0 \\\\ 2 \\\\ 2\end{matrix}\right)\\).
+
+\\( \vec{u} \cdot \vec{v} = 0\cdot 0+0\cdot 2+ 1 \cdot 2 = 2 \\)
+
+---
+### Beispiel aus der Physik
+
+Arbeit wird durch eine Kraft an einem Körper verrichtet, wenn diese Kraft auf den Körper einwirkt, während sie den Körper über einen bestimmten Weg bewegt.
+
+Das ergit die physikalische Formel
+
+\\(  A = \vec{F} \cdot \vec{s} =  |\vec{F}| \cdot |\vec{s}| \cdot \cos(\phi)  \\) 
+
+---
+### Beispiel Arbeit Energie 
+
+Wenn Sie zum Beispiel einen beladenen Einkaufswagen u ̈ber einen Weg von 50m durch Ausu ̈ben einer horizontalen Kraft von 30N auf den Wagen schieben, dann verrichten Sie an dem Wagen eine Arbeit von
+
+A = |K| · |s| = 30 N · 50 m = 1500 Nm = 1500 J.
+
+---
+### Winkelbestimmung
+
+Aus \\( \vec{u} \cdot \vec{v} = |\vec{u}| |\vec{v}| \cos(\phi) \\) folgt
+
+\\( \cos(\phi) = \frac{\vec{u} \cdot \vec{v}}{|\vec{u}| |\vec{v}|} \\)
+
+Für Vektoren in  \\( \mathbb{R}^3 \\) gilt:
+
+
+
+\\( \cos(\phi) = \frac{u\_1 v\_1 +u\_2 v\_2 + u\_3 v\_3 }{\sqrt{u\_1^2 + u\_2^2+ u\_3^2 } \sqrt{v\_1^2 + v\_2^2+ v\_3^2 }} \\)
+
+---
+### Beispiel
+
+Gegeben sind die Vektoren
+\\( \vec{u} = \left(\begin{matrix} 2 \\\\ -1\\\\ 1\end{matrix}\right)\\) und \\(\vec{v} = \left(\begin{matrix} 1 \\\\ 1 \\\\ 2\end{matrix}\right)\\) berechnen Sie den Winkel zwischen den beiden Vektoren.
+
+
+\\( \cos(\phi) = \frac{2\cdot 1+ (-1)\cdot 1 + 1 \cdot 2 } {\sqrt{4+1+1}\sqrt{4+1+1}} = \frac{3}{6} = \frac{1}{2} \\)
+---
+### Orthogonale Vektoren
+
+<br>
+
+Zwei Vektoren \\( \vec{u} \\) und \\( \vec{v} \\) sind genau dann orthogonal, wenn \\( \vec{u} \cdot \vec{v} = 0 \\) ist.
+
+---
+### Orthogonale Projektionen
+
+In einer Reihe von Anwendungen interessiert man sich für die "Zerlegung" eines Vektors \\( \vec{u}  \\) in einen zu einem gegebenen Vektor  \\( \vec{a}  \\) parallelen und einen dazu senkrechten Anteil.
+
+![orthogonale Projektion](media/L1_Projektion.png)
+
+Der Vektor \\(  \vec{w\_1} \\) heisst __Orthogonalprojektion__ von \\(  \vec{u} \\) auf \\(  \vec{a} \\)
+
+
+\\( \vec{u} = \vec{w\_1} + \vec{w\_2} \\)
+
+---
+### Orthogonalprojektion
+
+Für Vektoren \\(  \vec{u} \\) und \\(  \vec{a} \\) mit \\(  \vec{a} \neq  \vec{0}\\)   gilt :
+
+<br>
+
+\\( \vec{w\_1} = Proj_a(u) = \frac{\vec{u}\vec{a}}{|\vec{a}|^2} \vec{a}\\)
+<br>
+
+\\( \vec{w\_2} = \vec{u}-Proj_a(u) = \vec{u} - \frac{\vec{u}\vec{a}}{|\vec{a}|^2} \vec{a}\\)
+
+---
+### Beispiel
+
+
+
+\\( \vec{u} = \left(\begin{matrix} 2 \\\\ -1\\\\ 3\end{matrix}\right)\\) und \\(\vec{a} = \left(\begin{matrix} 4 \\\\ -1 \\\\ 2\end{matrix}\right)\\) 
+
+Bestimmen Sie die orthogonale Projektion von \\(  \vec{u} \\) auf den den Vektor \\(  \vec{a} \\) und den senkrechten Anteil.
+
+
+\\(  \vec{u} \vec{a} = 2 \cdot 4 + (-1) \cdot (-1) + 3 \cdot 2 = 15\\)
+
+\\(  |\vec{a}|^2 = 4^2 + (-1)^2 + 2^2 = 21 \\)
+
+\\(  Proj_a(u) = \frac{\vec{u}\vec{a}}{|\vec{a}|^2} \vec{a} = \frac{15}{21} \left(\begin{matrix} 4 \\\\ -1 \\\\ 2\end{matrix}\right) \\)
+
+---
+---
+---
+
+---
+---
+---
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
 ## Linearkombinationen von Vektoren
 
 </script>
