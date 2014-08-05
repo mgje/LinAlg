@@ -45,12 +45,12 @@
 ## Analytische Geometrie von Geraden und Ebenen
 
 
-In diesem Abschniit wollen wir ein paar grundlegende Begriffe aus der Analytischen Geometrie behandeln. Im Vordergrund stehen verschiedene Darstellungen von Geraden und Ebenen.
+In diesem Abschnitt wollen wir ein paar grundlegende Begriffe aus der Analytischen Geometrie behandeln. Im Vordergrund stehen verschiedene Darstellungen von Geraden und Ebenen.
 
 ---
 ### Darstellungen von Geraden
 
-Jede Gerade in der \\( x\_1\\),\\(x\_2\\)-Ebene lässt sich durch eine Koordinatengleichung 
+Jede Gerade in der \\( x\_1 , x\_2\\)-Ebene lässt sich durch eine Koordinatengleichung 
 
 der Form \\( ax\_1 +bx\_2 +c=0 \\) beschreiben.
 ---
@@ -97,10 +97,178 @@ Jede Gerade in der Ebene oder im Raum lässt sich durch eine Gleichung der Form
 Geben Sie zwei Parametergleichungen für die Gerade an, die durch die
 Punkte A = (1,−2,5) und B = (4,6,−2) geht.
 
+---
+### Aufgabe
+
+Prüfen Sie, ob der Punkt \\( A = (−7,−5,8) \\) auf der Geraden liegt, die durch die Gleichung 
+\\( \vec{x} = \left(\begin{matrix} 3 \\\\ -1 \\\\ 2\end{matrix}\right) + t \left(\begin{matrix} 5 \\\\ 2 \\\\ -3\end{matrix}\right) \\)
+ beschrieben ist.
+
+---
+### Gleichungssystem
+
+\\( \left(\begin{matrix} -7 \\\\ -5 \\\\ 8\end{matrix}\right)  = \left(\begin{matrix} 3 \\\\ -1 \\\\ 2\end{matrix}\right) + t \left(\begin{matrix} 5 \\\\ 2 \\\\ -3\end{matrix}\right) \\)
+
+<br>
+
+Für \\( t = -2 \\) ist jede Zeile des Gleichungssystems erfüllt,
+damit liegt \\( A \\) auf der Gerade 
+
+
+----
+
+### Parameterform -> Koordinatenform
+
+Bestimmen Sie die Koordinatenform von der Geraden g
+
+<br>
+
+\\(  \vec{x} =  \left(\begin{matrix} 4 \\\\ 0\end{matrix}\right) + t \cdot  \left(\begin{matrix} -2 \\\\ 1\end{matrix}\right)  \\)
 
 
 ---
+### Lösung
+
+$$
+\begin{align}
+x\_1 &= 4 + t \cdot (-2) \\\\
+x\_2 &=  t 
+\end{align}
+$$
+
+<br>
+
+$$
+\begin{align}
+x\_1 &= 4 + x\_2 \cdot (-2) \\\\
+\end{align}
+$$
+
+
+$$
+\begin{align}
+x\_1 + 2 x\_2 - 4 &= 0 \\\\
+\end{align}
+$$
+
 ---
+### Darstellung von Ebenen
+
+Jede Ebene lässt sich durch eine Gleichung der Form
+
+\\( \vec{x} = \vec{p} + s \cdot \vec{u} + t \cdot \vec{v} \mbox{ mit } s,t \in \mathbb{R} \\)
+
+
+beschreiben. Hierbei ist \\( \vec{p} \\) der Stützvektor und die nicht parallelen Vektoren \\( \vec{u} \\) und \\( \vec{v} \\) sind zwei Spannvektoren.
+
+---
+
+### Ebenengleichung in Parameterform
+
+![Ebenengleichung](media/L2-Ebenengleichung.png)
+
+---
+### Aufgabe
+Die drei Punkte \\( A = (1,−1,1), B = (1.5,1,0) \mbox{ und } C = (0,1,1) \\) legen
+eine Ebene fest. Geben Sie eine Parameterdarstellung dieser Ebene an.
+
+---
+### Lösung
+
+Wählt man als Stützvektor den Ortsvektor von \\( A \\) und als Spannvektoren \\( \overrightarrow{AB} \\)
+und  \\( \overrightarrow{AC} \\), so erhält man
+
+\\( \vec{x} =  \left(\begin{matrix} 1 \\\\ -1 \\\\ 1\end{matrix}\right) + s \left(\begin{matrix} 0.5 \\\\ 2 \\\\ -1\end{matrix}\right) + t \left(\begin{matrix} -1 \\\\ 2 \\\\ 0\end{matrix}\right)\\)
+
+
+---
+### Parameterform → Koordinatenform
+
+\\( \vec{x} =  \left(\begin{matrix} 1 \\\\ 1 \\\\ 1\end{matrix}\right) + s \left(\begin{matrix} 2 \\\\ 1 \\\\ 0\end{matrix}\right) + t \left(\begin{matrix} 3 \\\\ 0 \\\\ 0.5\end{matrix}\right)\\)
+
+
+---
+### Lösung über Gleichungssystem
+
+<br>
+
+$$
+\begin{align}
+x\_1 &= 1 + 2s + 3t \\\\
+x\_2 &= 1 + s  + 0t \\\\
+x\_3 &= 1 + 0s + 0.5t
+\end{align}
+$$
+
+<br> 
+
+$$
+\begin{align}
+x\_1 &= 1 + 2s + 3t \\\\
+s &= x\_2 -1 \\\\
+t &= 2x\_3- 2 
+\end{align}
+$$
+
+---
+
+$$
+\begin{align}
+x\_1 &= 1 + 2(x\_2 -1) + 3(2x\_3- 2 ) \\\\
+x\_1 &= 1 + 2x\_2 -2 + 6x\_3- 6  \\\\
+x\_1 - 2x\_2 - 6x\_3 +7 &= 0 \\\\
+\end{align}
+$$
+
+---
+### Koordinatenform → Parameterform
+
+Bestimmen Sie eine Parametergleichung von der Ebene, die durch die Gleichung
+
+\\( 3x\_1−x\_2+7x\_3−12=0 \\) gegeben ist.
+---
+### Lösung
+
+1. Schritt auflösen nach einer Koordinaten
+
+\\( x\_2 = 3x\_1+7x\_3−12 \\)
+ 
+ <br>
+
+$$
+\begin{align}
+x\_1 &= 1x\_1+0x\_3 + 0 \\\\
+x\_2 &= 3x\_1+7x\_3 − 12 \\\\
+x\_3 &= 0x\_1+1x\_3 + 0
+\end{align}
+$$
+
+
+---
+
+\\( \vec{x} =  s \cdot \left(\begin{matrix} 1 \\\\ 3 \\\\ 0\end{matrix}\right) + t \cdot \left(\begin{matrix} 0 \\\\ 7 \\\\ 1\end{matrix}\right) +  \left(\begin{matrix} 0 \\\\ -12 \\\\ 0\end{matrix}\right) \\)
+
+---
+Bestimme die Koordinatengleichung
+
+Die drei Punkte A = (1,1,0), B = (1,0,1) und C = (0,1,1) legen eine Ebene fest. Bestimmen Sie eine Koordinatengleichung dieser Ebene.
+
+---
+---
+---
+---
+---
+---
+
+
+
+
+
+---
+### Ebenengleichung in Normalenform
+
+![Ebenengleichung](media/L2-Normalform.png)
+
 ---
 ---
 ---
