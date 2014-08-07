@@ -175,27 +175,143 @@ Jeder Vektorraum \\( V ̸neq \vec{0}\\) enthält mindenstens zwei triviale Unter
 		</tr>
 	</tbody>
 </table>
+---
+### Exkurs Matrizzen
+
+* Was sind Matrizzen?
+* Wie wird damit gerechnet?
+---
+### Eine Matrix kann als recheckiges Zahlenschema betrachtet werden.
+<br>
+$$
+\begin{pmatrix} 12 & 3 & 6\\\\ -18 & -9 & 18 \\\\ 9 & 3 & 6 \end{pmatrix}
+\quad ,
+\begin{pmatrix} 2 & 9 & 6\end{pmatrix}
+\quad ,
+\begin{pmatrix} 2 \\\\ 1 \\\\ 0\end{pmatrix}
+$$
+<br>
+$$
+\begin{pmatrix} 12 & 3 \\\\ -18 &  18 \\\\ 3 & 6 \end{pmatrix}
+$$
+---
+### Matrix Operationen
+
+$$
+\begin{pmatrix} 12 & 3 & 6\\\\ -18 & -9 & 18 \\\\ 9 & 3 & 6 \end{pmatrix}
+\begin{pmatrix}  1\\\\ 2 \\\\ 3 \end{pmatrix} = ?
+$$
+--
+$$
+\begin{pmatrix} 12 & 3 & 6\\\\ -18 & -9 & 18 \\\\ 9 & 3 & 6 \end{pmatrix}
+\begin{pmatrix}  1\\\\ 2 \\\\ 3 \end{pmatrix} = 
+\begin{pmatrix} 12 \cdot 1 + 3 \cdot 2 + 6 \cdot 3\\\\ -18 \cdot 1 + -9 \cdot 2 + 18 \cdot 3 \\\\ 9 \cdot 1 + 3 \cdot 2 + 6 \cdot 3  \end{pmatrix}= \begin{pmatrix} 36 \\\\ 18 \\\\  33\end{pmatrix}
+$$
+---
+$$
+\begin{pmatrix} a\_{11} & a\_{12} & a\_{13}\\\\ a\_{21} & a\_{22} & a\_{23} \\\\ a\_{31} & a\_{32} & a\_{33} \end{pmatrix}
+\begin{pmatrix}  x\_1 \\\\ x\_2 \\\\ x\_3 \end{pmatrix} = ?
+$$
+--
+$$
+\begin{pmatrix} a\_{11} & a\_{12} & a\_{13}\\\\ a\_{21} & a\_{22} & a\_{23} \\\\ a\_{31} & a\_{32} & a\_{33} \end{pmatrix}
+\begin{pmatrix}  x\_1 \\\\ x\_2 \\\\ x\_3 \end{pmatrix} = 
+\begin{pmatrix}  a\_{11} \cdot x\_1 + a\_{12} \cdot x\_2 + a\_{13} \cdot x\_3 \\\\ a\_{21} \cdot x\_1 + a\_{22} \cdot x\_2 + a\_{23} \cdot x\_3 \\\\ a\_{31} \cdot x\_1 + a\_{32} \cdot x\_2 + a\_{33} \cdot x\_3 \end{pmatrix}
+$$
+---
+### Ein Gleichungssystem
+
+$$
+\begin{align}  
+a\_{11} \cdot x\_1 + a\_{12} \cdot x\_2 + a\_{13} \cdot x\_3 &= 0 \\\\ 
+a\_{21} \cdot x\_1 + a\_{22} \cdot x\_2 + a\_{23} \cdot x\_3 &= 0 \\\\ 
+a\_{31} \cdot x\_1 + a\_{32} \cdot x\_2 + a\_{33} \cdot x\_3 &= 0 \\\\
+\end{align} 
+$$
+
+---
+### lässt sich kompakt schreiben
+<br>
+
+$$
+\begin{pmatrix} a\_{11} & a\_{12} & a\_{13}\\\\ a\_{21} & a\_{22} & a\_{23} \\\\ a\_{31} & a\_{32} & a\_{33} \end{pmatrix}
+\begin{pmatrix}  x\_1 \\\\ x\_2 \\\\ x\_3 \end{pmatrix} = \vec{0}
+$$
+
+<br>
+
+$$
+A \vec{x} = 0
+$$
 
 
 ---
----
----
----
----
----
----
----
----
----
+### Der Nullraum
 
-## Reelle Vektorräume und Unterräume
----
-### U abgeschlossen
+Ein lineares homogenes Gleichungssystem mit m Gleichungen und n Unbekannten kann man stets in der Form
 
-![Ebenengleichung](media/L3-Uabgeschlossen.png)
+$$
+A \vec{x} = 0
+$$
+
+schreiben.
+
+Die Menge \\( \mathbb{W} \\) aller Lösungen des homogenen Gleichungssystem nennt man den __Nullraum__
+
+Den __Nullraum__ einer Matrix bezeichnet man mit \\( N(A) \\).
 
 ---
-## Der Begriff des Vektorraumes, Beispiele
+Der Lösungraum des linearen homogenen Gleichungssystems \\( Ax = 0\\) bzw. der Nullraum \\(N(A)\\) der Matrix \\(A \in \mathbb{R}^{m×n}\\) ist ein Untervektorraum des \\(\mathbb{R}n\\).
+
+
+---
+### Beispiel
+$$
+\begin{align}
+x\_1 + 2x\_2 &= 0
+3x\_1 + 6x\_2 &= 0
+\end{align}
+$$
+
+<br>
+
+$$
+A = \begin{pmatrix}  1 & 2 \\\\ 3 & 6 \end{pmatrix}
+$$
+
+---
+
+Das lineare System \\( A x  = 0 \\)
+
+ist äquivalent zur Gleichung 
+
+$$
+x\_1 + 2x\_2 = 0
+$$
+
+mit \\( x\_2 = t , t \in \mathbb{R}\\) erhalten wir \\( x\_1 = -2t, x\_2 = t \\)
+
+oder 
+
+\\(  \vec{x} = t \begin{pmatrix}  -2 \\\\ 1\end{pmatrix}\\)
+
+geometrisch beschreibt diese Gleichung eine Gerade im \\(\mathbb{R}^2\\) durch den Ursprung.
+---
+### Beispiel
+
+Beschreiben Sie den Nullraum der Matrix
+
+$$
+A = \begin{pmatrix}  1 & -2 \\\\ 3 & 2 \end{pmatrix}
+$$
+
+---
+
+### Lösung
+
+Das Gleichungssystem \\( A x  = 0 \\) hat nur die tirviale Lösung 
+\\( \vec{x} = \vec{0}\\)
+
 
 
 
