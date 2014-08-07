@@ -284,6 +284,28 @@ mit \\( a\_1 = 1 , a\_2 = 2, a\_3 = -1 \\)
 zu zeigen in den Übungen
 
 ---
+Lineare Unabhängigkeit
+
+Gegeben seien r Vektoren \\( \vec{v\_1}, \vec{v\_2}, \cdots , \vec{v\_r} \\) aus einem Vektorraum \\(\mathbb{V} \\). Die Vektorgleichung
+
+\\( c\_1\vec{v\_1} +c\_2\vec{v\_1} +\cdots +c\_r\vec{v\_r} =\vec{0} \\)
+
+hat mindestens die triviale Lösung
+
+\\(c\_1 =0, c\_2 =0, \cdots,c\_r =0 \\).
+
+
+Ist dies die einzige Lösung, so nennen wir die \\(r \\) Vektoren \\( \vec{v\_i} \\) __linear unabhängig__, sonst linear abhängig.
+---
+Zwei Vektoren im \\( \mathbb{R}^2\\) oder \\( \mathbb{R}^3\\) sind genau dann linear unabhängig, wenn sie nicht auf einer Geraden liegen.  Drei Vektoren im \\( \mathbb{R}^3\\) sind genau dann linear unabhängig, wenn sie nicht in einer Ebene liegen.
+---
+![VRLinUnabhaengig](media/L4-linunabhaengig.png)
+
+
+#### linear abhängig &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  linear unabhängig
+
+
+---
 ## Basis und Dimension
 ---
 Die Vektoren \\( \vec{v\_1}, \vec{v\_2}, \cdots , \vec{v\_n} \\) eines Vektorraumes \\(\mathbb{V} \\) bilden eine __Basis__ von  \\(\mathbb{V} \\), wenn sie den Vektorraum \\(\mathbb{V} \\) aufspannen und linear unabhängig sind.
@@ -292,6 +314,7 @@ Die Vektoren \\( \vec{v\_1}, \vec{v\_2}, \cdots , \vec{v\_n} \\) eines Vektorrau
 ### Basis eines Vektorraumes
 
 ![VRBasis](media/L4-Basis.png)
+
 
 ---
 ### Basis
@@ -332,8 +355,38 @@ c\_1 - 2c\_2 &= x\_1 \\\\
 $$
 
 ---
+$$
+\begin{align}
+c\_1 - 2c\_2 &= x\_1 \\\\
+3c\_1 +2c\_2 &= x\_2
+\end{align}
+$$
 
+$$
+\begin{align}
+4c\_1 &= x\_1 + x\_2 \\\\
+-8c\_2 &= 3x\_1 - x\_2
+\end{align}
+$$
 
+---
+### Beispiel
+
+Warum bilden die drei Vektoren \\( (1, 0), (0, 1) \mbox{ und } (1, 1)\\) keine Basis des \\( \mathbb{R}^2 \\)
+
+Weil 
+
+\\( \begin{pmatrix}  1\\\\ 0  \end{pmatrix} + \begin{pmatrix}  0\\\\ 1  \end{pmatrix} - \begin{pmatrix}  1\\\\   1\end{pmatrix} = \begin{pmatrix}  0\\\\ 0  \end{pmatrix}\\)
+
+folglich gilt:
+
+Ist \\( r > n \\) , so sind die \\(r \\) Vektoren im Vektorraum \\( \mathbb{R}^n\\) linear abhängig.
+
+---
+---
+---
+---
+---
 
 
 </script>
