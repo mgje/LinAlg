@@ -83,17 +83,100 @@ Ein reeller Vektorraum besteht aus einer Menge \\( V \\) von Elementen, die wir 
 * Für jeden Vektor \\( \vec{v} \in V\\) ist \\( (-1)\vec{v} = -\vec{v} \\).
 * Zu jedem Vektor \\( \vec{v} \in V\\) gibt es genau einen Gegenvektor.
 ---
+### Beispiele von reellen Vektorräumen
+
+* die Menge aller Funktionen von \\( \mathbb{R} \\) nach \\( \mathbb{R} \\)
+* die Menge aller stetigen Funktionen von \\( \mathbb{R} \\) nach \\( \mathbb{R} \\)
+* die Menge aller n-mal differenzierbaren Funktionen von \\( \mathbb{R} \\) nach \\( \mathbb{R} \\)
+* die Menge aller unendlich oft differenziebaren Funktionen von \\( \mathbb{R} \\) nach \\( \mathbb{R} \\)
+---
 ### Der Vektorraum der reellen Matrizen
 
+Wir betrachten die Menge Rm×n, als Addition \\( + \\) die elementweise definierte Matrizenaddition und als \\( · \\) die skalare Multiplikation einer Matrix mit einer reellen Zahl.
 
 ---
----
----
----
----
----
+### Matrix Addition \\( + \\)
 
- \\( c \odot \vec{v} \\)  
+$$
+A=\begin{pmatrix} 4 & 1 & 2\\\\ -6 & -3 & 6 \\\\ 3 & 1 & 2 \end{pmatrix} \quad \mbox{und} \quad
+B=\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 0 & -1 \\\\ 0 & -4 & -7 \end{pmatrix} \, .
+$$
+
+$$
+A + B = \begin{pmatrix} 5 & 3 & 5 \\\\ -4 & -3 & 5 \\\\ 3 & -3 & -5 \end{pmatrix} \
+$$
+---
+### Multiplikation mit Skalar 
+
+$$
+s = 3 \quad \mbox{,} \quad A=\begin{pmatrix} 4 & 1 & 2\\\\ -6 & -3 & 6 \\\\ 3 & 1 & 2 \end{pmatrix}
+$$
+
+$$
+s \cdot A = \begin{pmatrix} 12 & 3 & 6\\\\ -18 & -9 & 18 \\\\ 9 & 3 & 6 \end{pmatrix}
+$$
+---
+### Nullelement ?
+
+$$ 0 + A = A$$
+
+$$
+\begin{pmatrix} 0 & 0 & 0\\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \end{pmatrix} +
+\begin{pmatrix} 4 & 1 & 2\\\\ -6 & -3 & 6 \\\\ 3 & 1 & 2 \end{pmatrix}
+= \begin{pmatrix} 4 & 1 & 2\\\\ -6 & -3 & 6 \\\\ 3 & 1 & 2 \end{pmatrix}
+$$
+
+---
+### Untervektorräume
+
+Es sei \\( V \\) ein Vektorraum und \\( U \\) eine nichtleere Teilmenge von \\(V \\). Ist \\( U \\) ein Vektorraum bezüglich der Operationen in \\( V \\), so ist \\( U \\) ein __Untervektorraum__ von \\( V \\) . Statt Untervektorraum sagt man oft kurz __Unterraum__.
+
+---
+### Unterraumkriterium
+
+* Abgeschlossenheit Additon: Ist \\( \vec{u},\vec{v} \in U \\) dann ist auch \\( (\vec{u} + \vec{v}) \in U\\)
+* Abgeschlossenheit Multiplikation: Ist \\( \vec{u} \in U  \quad \mbox{und} \quad c \in \mathbb{R}\\) dann ist auch
+\\( (c\vec{u}) \in U \\)
+---
+### Beispiel
+
+Es sei \\( U \\) eine durch den Ursprung verlaufende Gerade im Vektorraum \\( \mathbb{R}^3 \\). Begründen Sie, dass \\( U \\) ein Unterraum des \\( \mathbb{R}^3 \\) ist.
+
+Begründung: Seien \\( P\_1, P\_2\\) zwei Punkte auf der Geraden. Es liegt auch \\( c \overrightarrow{P\_1P\_2}\\) auf dieser Gerade für jedes \\( c \in \mathbb{R} \\).
+
+Sind \\( \vec{v\_1}, \vec{v\_2}\\) Vektoren auf der Geraden, dann ist auch \\( (\vec{v\_1} + \vec{v\_2})\\) ein Vektor auf der Geraden.
+
+---
+### Triviale Unterräume
+Jeder Vektorraum \\( V ̸neq \vec{0}\\) enthält mindenstens zwei triviale Unterräume, nämlich den ganzen Raum \\( V \\) und den Nullvektorraum \\( \vec{0} \\).
+---
+### Unterräume von \\( \mathbb{R}^2\\) und \\( \mathbb{R}^3\\)
+
+<table class="mgu">
+	<thead>
+		<tr>
+			<th>Unterräume des \\( \mathbb{R}^2 \\)</th>
+			<th>Unterräume des \\( \mathbb{R}^3 \\)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>\\( \vec{0}\\)</td>
+			<td>\\( \vec{0}\\)</td>
+		</tr><tr>
+			<td>Geraden durch den Ursprung</td>
+			<td>Geraden durch den Ursprung</td>
+		</tr><tr>
+			<td></td>
+			<td>Ebenen durch den Ursprung</td>
+		</tr><tr>
+			<td>\\( \mathbb{R}^2\\)</td>
+			<td>\\( \mathbb{R}^3\\)</td>			
+		</tr>
+	</tbody>
+</table>
+
+
 ---
 ---
 ---
