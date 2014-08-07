@@ -41,7 +41,65 @@
 <!-- Einleitung -->
 <section data-markdown data-separator="---" data-vertical="--" data-background="#FFFFFF">
 <script type="text/template">
-## Linearkombination, Lineare Abhöngigkeit, Basivektoren
+## Linearkombination
+---
+Gegeben sind die Vektoren \\( \vec{v\_1}, \vec{v\_2}, \cdots , \vec{v\_r} \\) aus einem Vektorraum \\(\mathbb{V} \\) . Ein Vektor \\( \vec{v} \in  \mathbb{V}\\) ist eine Linearkombination der Vektoren \\( \vec{v\_1}, \vec{v\_2}, \cdots , \vec{v\_r} \\), wenn gilt
+
+\\( \vec{v} = a\_1\vec{v\_1}+ a\_2\vec{v\_2}+ \cdots +a\_r \vec{v\_r} \\) für irgendwelche reelle Zahlen \\( a\_1, a\_2, \cdots, a\_r\\). Diese reellen Zahlen heissen Ko-
+effizienten.
+---
+
+### Beispiel
+
+Gegeben seien im Vektorraum \\( \mathbb{R}^3 \\) die Vektoren \\( \vec{v\_1} = (1,2,1), \vec{v\_2} = (1,0,2) \mbox{ und } \vec{v\_3} =(1,1,0) \\). Zeigen Sie, dass der Vektor \\( \vec{v}=(2,1,5) \in \mathbb{R}^3\\) eine Linearkombination von \\( \vec{v\_1},\vec{v\_2},\vec{v\_3}\\) ist.
+
+---
+### Lösung
+
+Der Vektor \\( \vec{v}=(2,1,5) \\) ist eine Linearkombination von \\( \vec{v\_1},\vec{v\_2},\vec{v\_3}\\), falls wir reelle Zahlen  \\( a\_1, a\_2, a\_3\\) finden können, so dass 
+
+\\( a\_1\vec{v\_1}+a\_2\vec{v\_2}+a\_3\vec{v\_3} = \vec{v} \\) ist.
+---
+
+also 
+
+\\( a\_1\begin{pmatrix}  1 \\\\ 2 \\\\ 1\end{pmatrix}+a\_2\begin{pmatrix}  1 \\\\ 0 \\\\ 2\end{pmatrix}+a\_3\begin{pmatrix}  1 \\\\ 1 \\\\ 0\end{pmatrix} = \begin{pmatrix}  2 \\\\ 1 \\\\ 5\end{pmatrix} \\) 
+oder als lin. Gleichungssystem
+
+$$
+\begin{align}
+a\_1 + a\_2 + a\_3 &= 2 \\\\
+2a\_1 + a\_3 &= 1 \\\\
+a\_1 + 2a\_2  &= 5
+\end{align}
+$$
+
+Lösen wir nun dieses System mit einer Methode wie zum Beispiel dem Gaussverfahren, so erhalten wir die eindeutige Lösung \\( a\_1 = 1, a\_2 = 2 ,a\_3 = −1 \\)
+
+
+---
+### Gaussverfahren
+
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+, Lineare Abhöngigkeit, Basivektoren
 ---
 ## Linear Unabhängigkeit
 
@@ -58,12 +116,6 @@
 
 		<script src="../reveal/lib/js/head.min.js"></script>
 		<script src="../reveal/js/reveal.min.js"></script>
-
-		<!-- JS Animation Matrix Multiplikation -->
-		<script>
-		
-    
-
 
 		<script>
 
