@@ -78,33 +78,261 @@ Lösen wir nun dieses System mit einer Methode wie zum Beispiel dem Gaussverfahr
 
 
 ---
+### Exkurs Gaussverfahren
+
+Elementare Gleichungsumformungen ändern nicht die Lösungsmenge eines linearen Gleichungssystems.
+
+* Vertauschen von zwei Zeilen
+* Multiplikation einer Zeile mit einer von Null verschiedenen Konstanten
+* Addition eines Vielfachen einer Zeile zu einer anderen Zeile
+
+---
+Durch elementare Zeilenumformungen kann man nun jede Matrix auf Zeilenstufenform bringen. 
+Eine Matrix hat __Zeilenstufenform__, wenn folgende Eigenschaften erfüllt sind:
+
+* Alle Zeilen, die nur Nullen enthalten, stehen in den untersten Zeilen der Matrix.
+* Wenn eine Zeile nicht nur aus Nullen besteht, so ist die erste von Null verschiedene Zahl eine __Eins__.
+* In zwei aufeinanderfolgenden Zeilen, die nicht verschwindende Elemente
+besitzen, steht die führende Eins der unteren Zeile rechts von der führenden Eins der oberen Zeile.
+---
+### Beisiele
+$$
+\begin{pmatrix}  1 & 4 & 3 & 7 \\\\ 0 & 1 & 5 & 2 \\\\ 0 & 0 & 1 & 9\end{pmatrix} ,
+\begin{pmatrix}  1 & 0 & 0  \\\\ 0 & 1 & 0  \\\\ 0 & 0 & 1 \end{pmatrix} ,
+\begin{pmatrix}  1 & 1 & 0  \\\\ 0 & 1 & 0  \\\\ 0 & 0 & 0 \end{pmatrix}  ,
+\begin{pmatrix}  1 & 3 & 4  \\\\ 0 & 0 & 0  \\\\ 0 & 0 & 0 \end{pmatrix}
+$$
+---
 ### Gaussverfahren
 
+* Wir bringen die Matrix in Zeilenstufenform
+* Wir lösen das System in Zeilenstufenform durch Rückwärtssubstitution
 
 ---
+### Beispiel
+
+$$
+\begin{align}
+x + y + 2z &= 9 \\\\
+2x + 4y - 3z &= 1 \\\\
+3x +6y - 5z &= 0
+\end{align}
+$$
+
+<br>
+
+$$
+\begin{pmatrix}  1 & 1 & 2 & 9  \\\\ 2 & 4 & -3 & 1 \\\\ 3 & 6 & -5 & 0 \end{pmatrix}
+$$
 ---
+### (-2)-Fache der ersten Zeile zur zweiten addieren
+
+$$
+\begin{pmatrix}  1 & 1 & 2 & 9  \\\\ 2 & 4 & -3 & 1 \\\\ 3 & 6 & -5 & 0 \end{pmatrix}
+\to
+\begin{pmatrix}  1 & 1 & 2 & 9  \\\\ 0 & 2 & -7 & -17 \\\\ 3 & 6 & -5 & 0 \end{pmatrix}
+$$
+
 ---
+### (-3)-Fache der ersten Zeile zur dritten addieren
+
+$$
+\begin{pmatrix}  1 & 1 & 2 & 9  \\\\ 0 & 2 & -7 & -17 \\\\ 3 & 6 & -5 & 0 \end{pmatrix}
+\to
+\begin{pmatrix}  1 & 1 & 2 & 9  \\\\ 0 & 2 & -7 & -17 \\\\ 0 & 3 & -11 & -27 \end{pmatrix}
+$$
 ---
+### Zweite Zeile durch 2 dividieren
+$$
+\begin{pmatrix}  1 & 1 & 2 & 9  \\\\ 0 & 2 & -7 & -17 \\\\ 0 & 3 & -11 & -27 \end{pmatrix}
+\to
+\begin{pmatrix}  1 & 1 & 2 & 9  \\\\ 0 & 1 & \frac{-7}{2} & \frac{-17}{2} \\\\ 0 & 3 & -11 & -27 \end{pmatrix}
+$$
 ---
+### (-3)-Fache der zweiten Zeile zur dritten addieren
+
+$$
+\begin{pmatrix}  1 & 1 & 2 & 9  \\\\ 0 & 1 & \frac{-7}{2} & \frac{-17}{2} \\\\ 0 & 3 & -11 & -27 \end{pmatrix}
+\to
+\begin{pmatrix}  1 & 1 & 2 & 9  \\\\ 0 & 1 & \frac{-7}{2} & \frac{-17}{2} \\\\ 0 & 0 & -\frac{1}{2} & -\frac{3}{2} \end{pmatrix}
+$$
+
+
 ---
+## Letzte Zeile mit -2 multiplizieren
+
+$$
+\begin{pmatrix}  1 & 1 & 2 & 9  \\\\ 0 & 1 & \frac{-7}{2} & \frac{-17}{2} \\\\ 0 & 0 & -\frac{1}{2} & -\frac{3}{2} \end{pmatrix}
+\to
+\begin{pmatrix}  1 & 1 & 2 & 9  \\\\ 0 & 1 & \frac{-7}{2} & \frac{-17}{2} \\\\ 0 & 0 & 1 & 3 \end{pmatrix}
+$$
 ---
+
+Damit ist die Zeilenstufenform erreicht und wir können durch Rückwärts-
+substitution lösen. Auflösen nach den führenden Variablen ergibt
+$$
+\begin{align}
+x &= -y - 2z +9 \\\\
+y  &= \frac{-17}{2} + \frac{7}{2}z \\\\
+z &= 3
+\end{align}
+$$
+
+<br>
+
+$$
+\begin{align}
+x &= -y - 2z +9 = -2 - 6 + 9 = 1\\\\
+y  &= \frac{-17}{2} + \frac{21}{2} = 2 \\\\
+z &= 3
+\end{align}
+$$
+
 ---
+### Zur Repetition mit 
+
+<br>
+
+$$
+\begin{align}
+a\_1 + a\_2 + a\_3 &= 2 \\\\
+2a\_1 + a\_3 &= 1 \\\\
+a\_1 + 2a\_2  &= 5
+\end{align}
+\to 
+\begin{pmatrix}  1 & 1 & 1 & 2  \\\\ 2 & 0 & 1 & 1  \\\\ 1 & 2 & 0 & 5 \end{pmatrix}
+$$
 ---
+### (-2)-Fache der ersten Zeile zur zweiten addieren
+
+$$
+\begin{pmatrix}  1 & 1 & 1 & 2  \\\\ 2 & 0 & 1 & 1  \\\\ 1 & 2 & 0 & 5 \end{pmatrix}
+\to
+\begin{pmatrix}  1 & 1 & 1 & 2  \\\\ 0 & -2 & -1 & -3  \\\\ 1 & 2 & 0 & 5 \end{pmatrix}
+$$
+
+
 ---
+### (-1)-Fache der ersten Zeile zur dritten addieren
+
+$$
+\begin{pmatrix}  1 & 1 & 1 & 2  \\\\ 0 & -2 & -1 & -3  \\\\ 1 & 2 & 0 & 5 \end{pmatrix}
+\to
+\begin{pmatrix}  1 & 1 & 1 & 2  \\\\ 0 & -2 & -1 & -3  \\\\ 0 & 1 & -1 & 3 \end{pmatrix}
+$$
+
+
 ---
+### Zweite Zeile durch -2 dividieren
+
+$$
+\begin{pmatrix}  1 & 1 & 1 & 2  \\\\ 0 & -2 & -1 & -3  \\\\ 0 & 1 & -1 & 3 \end{pmatrix}
+\to
+\begin{pmatrix}  1 & 1 & 1 & 2  \\\\ 0 & 1 & \frac{1}{2} & \frac{3}{2}  \\\\ 0 & 1 & -1 & 3 \end{pmatrix}
+$$
+
 ---
+### (-1)-Fache der zweiten Zeile zur dritten addieren
+
+$$
+\begin{pmatrix}  1 & 1 & 1 & 2  \\\\ 0 & 1 & \frac{1}{2} & \frac{3}{2}  \\\\ 0 & 1 & -1 & 3 \end{pmatrix}
+\to
+\begin{pmatrix}  1 & 1 & 1 & 2  \\\\ 0 & 1 & \frac{1}{2} & \frac{3}{2}  \\\\ 0 & 0 & -\frac{3}{2} & \frac{3}{2} \end{pmatrix}
+$$
 ---
+### Dritte Zeilem mit \\( -\frac{2}{3}\\) multiplizieren.
+
+$$
+\begin{pmatrix}  1 & 1 & 1 & 2  \\\\ 0 & 1 & \frac{1}{2} & \frac{3}{2}  \\\\ 0 & 0 & -\frac{3}{2} & \frac{3}{2} \end{pmatrix}
+\to
+\begin{pmatrix}  1 & 1 & 1 & 2  \\\\ 0 & 1 & \frac{1}{2} & \frac{3}{2}  \\\\ 0 & 0 & 1 & -1 \end{pmatrix}
+$$
+
 ---
+Damit ist die Zeilenstufenform erreicht und wir können durch Rückwärts-
+substitution lösen. Auflösen nach den führenden Variablen ergibt
+$$
+\begin{align}
+a\_1 &= -a\_2 - a\_3 +2 \\\\
+a\_2  &= -\frac{1}{2}a\_3 + \frac{3}{2} \\\\
+a\_3 &= -1
+\end{align}
+$$
+
+<br>
+
+$$
+\begin{align}
+a\_1 &= -2 + 1 +2 = 1\\\\
+a\_2  &= \frac{1}{2} + \frac{3}{2} = 2 \\\\
+a\_3 &= -1
+\end{align}
+$$
 ---
+Damit steht die Linearkombination
+
+<br>
+
+\\( a\_1\begin{pmatrix}  1 \\\\ 2 \\\\ 1\end{pmatrix}+a\_2\begin{pmatrix}  1 \\\\ 0 \\\\ 2\end{pmatrix}+a\_3\begin{pmatrix}  1 \\\\ 1 \\\\ 0\end{pmatrix} = \begin{pmatrix}  2 \\\\ 1 \\\\ 5\end{pmatrix} \\) 
+
+<br>
+
+mit \\( a\_1 = 1 , a\_2 = 2, a\_3 = -1 \\)
 ---
----
----
-, Lineare Abhöngigkeit, Basivektoren
----
-## Linear Unabhängigkeit
+### Lineare Hülle bildet Unterraum
+
+zu zeigen in den Übungen
 
 ---
 ## Basis und Dimension
+---
+Die Vektoren \\( \vec{v\_1}, \vec{v\_2}, \cdots , \vec{v\_n} \\) eines Vektorraumes \\(\mathbb{V} \\) bilden eine __Basis__ von  \\(\mathbb{V} \\), wenn sie den Vektorraum \\(\mathbb{V} \\) aufspannen und linear unabhängig sind.
+
+---
+### Basis eines Vektorraumes
+
+![VRBasis](media/L4-Basis.png)
+
+---
+### Basis
+
+Bilden die Vektoren \\( {\vec{v\_1},\vec{v\_2}, \cdots , \vec{v\_n}} \\) eine Basis des Vektorraumes \\( \mathbb{V} \\) , dann kann jeder Vektor \\( \vec{v} \\) aus \\( \mathbb{V} \\) als eindeutige Linarkombination der Basisvektoren \\( {\vec{v\_1},\vec{v\_2}, \cdots , \vec{v\_n}} \\) dargestellt werden.
+
+
+---
+### Beispiel
+
+Zeigen Sie, dass die beiden Vektoren \\( (1,0) \mbox{ und } (0,1) \\) eine Basis des Vektorraumes \\( \mathbb{R}^2 \\) bilden. 
+
+
+Lösung:
+
+Ein beliebiger Vektor \\( \begin{pmatrix}  x\_1 \\\\ x\_2  \end{pmatrix} \\)
+
+kann als Linearkombination geschrieben werden. \\( x\_1 \begin{pmatrix}  1 \\\\ 0  \end{pmatrix}
+	+ x\_2\begin{pmatrix}  0 \\\\ 1  \end{pmatrix}\\)
+
+
+---
+### Beispiel 2
+
+Zeigen Sie, dass die beiden Vektoren \\( (1,3) \mbox{ und } (−2,2) \\) eine Basis des \\( \mathbb{R}^2\\) bilden.
+
+
+Lösung: Es sei \\( (x\_1,x\_2) \in \mathbb{R}^2 \\). Wir suchen zwei reelle Zahlen \\( c\_1 , c\_2 \\) mit den Eigenschaften
+
+
+$$
+c\_1 \begin{pmatrix}  1\\\\ 3  \end{pmatrix} + c\_2 \begin{pmatrix}  -2 \\\\ 2  \end{pmatrix} = \begin{pmatrix}  x\_1 \\\\ x\_2  \end{pmatrix}
+\to
+\begin{align}
+c\_1 - 2c\_2 &= x\_1 \\\\
+3c\_1 +2c\_2 &= x\_2
+\end{align}
+$$
+
+---
+
 
 
 
