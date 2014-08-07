@@ -39,9 +39,10 @@ Nr | Themen | Verweise
 ###  Linearkombinationen, Lineare Abhöngigkeit, Basivektoren
 - Lineare Hüllen, Erzeugendensysteme, lineare Abhängikeit
 - Linear Unabhängigkeit
-- Basis und Dimension
+- Basisvektoren
 
 ### Dimension, Matrizen und Matrixoperationen
+-  Dimension 
 -  Euklidische Vektor- und Punkträume
 -  Matrizenmultiplikation und -inversion
 -  Begriffsbestimmung, Rang von Matrizen
