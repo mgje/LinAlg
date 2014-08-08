@@ -170,7 +170,39 @@ $$
 P\_1 \vec{b} = \begin{pmatrix}  0 & 0 & 0   \\\\ 0 & 0 & 0  \\\\ 0 & 0 & 1  \end{pmatrix} \begin{pmatrix}  b\_1  \\\\ b\_2  \\\\ b\_3  \end{pmatrix} = \begin{pmatrix}  0  \\\\ 0  \\\\ b\_3  \end{pmatrix}
 $$
 ---
+### Gesucht Projektion einses Vekotors auf einen anderen Vektor
+
+Gegeben sei ein Vektor \\( \vec{b} \in  \mathbb{R}^m \\), der orthogonal auf eine Gerade projiziert werden soll, auf der der Vektor \\( \vec{a} = (a\_1, a\_2, \cdots, a\_m) \neq \vec{0} \\) liegt.
+
+
+Anders ausgedrückt: Wir wollen \\( \vec{b} \\) auf den Spaltenraum der Matrix \\( A \\) projizieren, wobei die Matrix \\( A \\) (im Moment) nur aus dem Spaltenvektor \\( \vec{a} \\) besteht.
+
 ---
+
+$$ \vec{p} = Proj\_a(b)$$ 
+
+\\( \vec{p} \\) muss ein Vielfaches von \\( \vec{a} \\) sein.
+
+\\( \vec{p} = x\vec{a} \\) 
+
+<br> 
+Nun ist \\( \vec{b}-\vec{p} = \vec{b}- x\vec{a} \\) orthogonal zu \\( \vec{a} \\)
+<br>
+also gilt:
+<br>
+\\(\vec{a} \cdot (\vec{b}- x\vec{a}) = 0 \\)
+<br>
+
+\\(a^Tb -xa^Ta = 0 \\)
+---
+### Projektion auf eine Gerade im \\( \mathbb{R}^n \\)
+
+Der orthogonale Projektionsvektor \\(\vec{p} \in \mathbb{R}^n \\) von \\(\vec{b} \in \mathbb{R}^n \\)auf die Gerade, die durch \\(\vec{a} \in \mathbb{R}^n \\) verläuft, ist
+
+$$
+\vec{p} = x\vec{a}= \frac{a^Tb}{a^Ta}\vec{a} \mbox{ , } a \neq \vec{0}
+$$
+
 ---
 ---
 ---
