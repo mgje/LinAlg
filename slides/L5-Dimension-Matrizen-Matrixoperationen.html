@@ -43,27 +43,143 @@
 <script type="text/template">
 
 
-Die Dimension eines Vektorraumes V ist gleich der Anzahl der Vektoren einer Basis fu ̈r V . Hierfu ̈r schreiben wir Dim(V ). Der triviale Vektorraum {o}, der nur aus dem Nullvektor besteht, hat die Dimension Null.
+Die Dimension eines Vektorraumes \\( \mathbb{V} \\) ist gleich der Anzahl der Vektoren einer Basis für \\( \mathbb{V} \\) . Hierfür schreiben wir Dim(\\( \mathbb{V} \\) ). Der triviale Vektorraum \\( {0} \\), der nur aus dem Nullvektor besteht, hat die Dimension Null.
+---
+### Standardbasis
+
+![Standardbasis](media/L5-StandartBasis.png)
+
+
+Natürliche Basis im \\( \mathbb{R}^1 \\) , \\( \mathbb{R}^2 \\) und \\( \mathbb{R}^3 \\) 
+---
+### Invertierbare (n,n)-Matrix → die Spaltenvektoren bilden einen Basis
+
+Die Spaltenvektoren jeder invertierbaren (n, n)-Matrix bilden eine Basis des Raumes \\( \mathbb{R}^n \\). 
+
+Ist nämlich die Matrix \\( A \\) invertierbar, so sind die Spaltenvektoren linear unabhängig, denn das homogene System \\( A\vec{x} = \vec{0} \\) hat nur die triviale Lösung \\( x = \vec{0} \\)
+
+Damit spannen die Spaltenvektoren den gesamten Raum \\( \mathbb{R}^n \\) auf.
+
+Da jeder Vektor \\( \vec{b} \in \mathbb{R}^n \\) liegt, ist \\( A\vec{x} = \vec{b} \\) lösbar und 
+\\( \vec{x} = A^{-1}\vec{b} \\) eine eindeutige Lösung.
+
+
+---
+### Hauptsatz 1 (Dimension der Fundamentalräume)
+
+Der Zeilenraum und der Spaltenraum einer Matrix haben die gleiche Dimension \\( r \\). Die Nullräume haben die Dimensionen \\( n − r \\) und \\( m − r \\).
+
+---
+
+### Dimensionen der vier Fundamentalräume
+
+
+<table class="mgu">
+	<thead>
+		<tr>
+			<th>Fundamentalraum</th>
+			<th>Dimension</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Zeilenraum von \\(A\\)</td>
+			<td>\\(r \\)</td>
+		</tr><tr>
+			<td>Spaltenraum von \\(A\\)</td>
+			<td>\\(r \\)</td>
+		</tr><tr>
+			<td>Nullraum von \\(A\\)</td>
+			<td>\\(n-r \\)</td>
+		</tr><tr>
+			<td>Spaltenraum von \\(A^T\\)</td>
+			<td>\\(m-r \\)</td>			
+		</tr>
+	</tbody>
+</table>
+
+Die Dimension des Zeilenraumes (oder Spaltenraumes) einer Matrix \\( A \in \mathbb{R}^{m×n} \\) heisst Rang von \\( A \\); wir schreiben __Rang(A)__.
+
+---
+
+## Euklidischer Vektorraum
+---
+Ein Euklidischer Vektorraum ist ein reeller Vektorraum, auf dem ein Skalarprodukt definiert ist.
+
+Es gibt viele Euklidische Vektorräume, der \\( \mathbb{R}^{n} \\)  mit dem gewöhnlichen Skalarprodukt ist der wichtigste. Auch wenn sich die Vektoren für \\( n ≥ 4 \\) nicht mehr zeichnen lassen, so können wir dann dennoch von Länge und Orthogonalität sprechen.
+
+--- 
+
+Es sind \\( \vec{u} = (u\_1,u\_2,\cdots,u\_n) \\) und \\( \vec{v} = (v\_1,v\_2,\cdots,v\_n) \\) Vektoren im \\( \mathbb{R}^{n} \\) . Das (natürliche) Skalarprodukt im \\( \mathbb{R}^{n} \\) \\( \vec{u} \cdot \vec{v}\\) ist definiert durch \\( \vec{u} \cdot \vec{v} =  u\_1v\_1+u\_2v\_2+\cdots + u\_nv\_n\\)
+
+---
+### Beispiel 
+
+Berechnen Sie das Skalarprodukt der Vektoren \\( \vec{u} = (−1,2,3,7) \\) und \\( \vec{v} = (5, 4, −7, 0)\\) im Euklidischen Vektorraum \\( \mathbb{R}^{4} \\) .
+
+--
+### Lösung
+
+\\( \vec{u} · \vec{v} = (−1)(5) + (2)(4) + (3)(−7) + (7)(0) = −18 \\)
+
+---
+### Rechenregeln des Skalarproduktes im \\( \mathbb{R}^{n} \\)
+
+Es seinen \\( \vec{u} \\), \\( \vec{v} \\) und \\( \vec{w} \\) Vektoren des \\( \mathbb{R}^{n} \\)
+und \\( c \\) ein Skalar. Dann gilt:
+
+* \\( \vec{u} \cdot \vec{v} = \vec{v} \cdot \vec{u}\\), (Kommutativgesetz)
+* \\( \vec{u} \cdot (\vec{v} + \vec{w}) = \vec{u} \cdot \vec{v} + \vec{u} \cdot \vec{w} \\), (Distributivgesetz)
+* \\( c(\vec{u} \cdot \vec{v}) = (c\vec{u}) \cdot \vec{v} = \vec{u} \cdot (c\vec{v}) \\)
+* \\( \vec{v} \cdot \vec{v} > 0 \mbox{ für } \vec{v} \neq \vec{0} \mbox{ und } \vec{v} \cdot \vec{v} = 0 \mbox{ für } \vec{v} = \vec{0}\\)
+
+
+---
+### Beispiel
+
+Zeigen Sie, dass die Vektoren \\( \vec{u} = (−2,3,1,4) \\) und \\( \vec{v} = (1,2,0,−1) \\) im Raum \\( \mathbb{R}^4 \\) senkrecht aufeinander stehen.
+
+--
+### Lösung:
+\\( \vec{u}·\vec{v} = (−2,3,1,4)·(1,2,0,−1) = (−2)(1)+(3)(2)+(1)(0)+(4)(−1) = 0 \\)
+
+---
+### Satz des Pythagoras im \\( \mathbb{R}^n \\)
+
+Sind \\( \vec{u} \\) und \\( \vec{v} \\) zwei zueinander senkrechte Vektoren im Vektorraum \\( \mathbb{R}^n \\), so gilt
+
+\\( |\vec{u} + \vec{v}|^2 = |\vec{u}|^2 + |\vec{v}|^2 \\).
+
+
+---
+### Orthogonale Projektionen
+
+---
+### Beispiel einer orthogonalen Projektion
+
+$$
+P\_1 =
+\begin{pmatrix}  0 & 0 & 0   \\\\ 0 & 0 & 0  \\\\ 0 & 0 & 1  \end{pmatrix}
+$$
+
+\\( P\_1 b\\) für \\( \vec{b} \in \mathbb{R}^3\\) projeziert den Vektor \\( \vec{b} \\) auf die z-Achse.
+
+
+
+$$
+P\_1 \vec{b} = \begin{pmatrix}  0 & 0 & 0   \\\\ 0 & 0 & 0  \\\\ 0 & 0 & 1  \end{pmatrix} \begin{pmatrix}  b\_1  \\\\ b\_2  \\\\ b\_3  \end{pmatrix} = \begin{pmatrix}  0  \\\\ 0  \\\\ b\_3  \end{pmatrix}
+$$
 ---
 ---
 ---
-
-
-
-
-
-
-
-
-## Dimension, Matrizen und Matrixoperationen
 ---
-## Euklidische Vektor- und Punkträume
-
 ---
-## Matrizenmultiplikation und -inversion
-
 ---
-## Begriffsbestimmung, Rang von Matrizen
+---
+---
+
+
+
 
 
 
@@ -75,11 +191,6 @@ Die Dimension eines Vektorraumes V ist gleich der Anzahl der Vektoren einer Basi
 
 		<script src="../reveal/lib/js/head.min.js"></script>
 		<script src="../reveal/js/reveal.min.js"></script>
-
-		<!-- JS Animation Matrix Multiplikation -->
-		<script>
-		
-  
 
 		<script>
 
