@@ -150,6 +150,9 @@ Sind \\( \vec{u} \\) und \\( \vec{v} \\) zwei zueinander senkrechte Vektoren im 
 
 \\( |\vec{u} + \vec{v}|^2 = |\vec{u}|^2 + |\vec{v}|^2 \\).
 
+---
+### Matrix Multiplikation
+
 
 ---
 ### Orthogonale Projektionen
@@ -204,6 +207,36 @@ $$
 $$
 
 ---
+### Beispiel
+
+Berechnen Sie die Projektionsmatrix \\(P\_{Lin(a)}\\) auf die Gerade durch \\( \vec{a} = (1, 2, 2) \\).
+
+
+
+$$
+a^T \cdot a = \begin{pmatrix}  1  & 2  & 2 \end{pmatrix} \begin{pmatrix}  1  \\\\ 2  \\\\ 2 \end{pmatrix} = 1\cdot 1+ 2 \cdot 2 +  2 \cdot 2 =9 $$
+
+
+
+$$ 
+a\cdot a^T = \begin{pmatrix}  1  \\\\ 2  \\\\ 2 \end{pmatrix} \begin{pmatrix}  1  & 2  & 2 \end{pmatrix} = \begin{pmatrix}  1  & 2  & 2  \\\\ 2  & 4  & 4  \\\\ 2  & 4  & 4 \end{pmatrix}
+$$
+
+--
+
+$$
+p  = \frac{a \cdot a^T}{a^T \cdot a} = \frac{1}{9} \begin{pmatrix}  1  & 2  & 2  \\\\ 2  & 4  & 4  \\\\ 2  & 4  & 4 \end{pmatrix}
+$$
+
+---
+
+<video width="1128" height="668" data-autoplay >
+	    <source src="media/movies/Projektionsmatrix.m4v" type="video/mp4" />
+	    <source src="media/movies/Projektionsmatrix.webm" type="video/webm" />
+		Your browser does not support the <code>video</code> element.
+</video>
+
+
 ---
 ---
 ---
