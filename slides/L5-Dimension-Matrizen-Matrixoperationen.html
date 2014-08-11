@@ -238,7 +238,58 @@ $$
 
 
 ---
+Sei \\( A \\) eine \\( (m,n)\\)-Matrix mit linear unabhängigen Spaltenvektoren. Dann hat das System \\(A x = b \\) für jede \\((n,1)\\)-Matrix \\(b\\) die eindeutig bestimmte Näherungslösung
+
+$$
+x = (A^TA)^{-1}A^Tb
+$$
+
+Weiter gilt die Orthogonalprojektion von \\(b\\) auf den Spaltenraum \\(W\\) von A
+$$
+proj_W b = Ax = A(A^TA)^{-1}A^T b
+$$
 ---
+Mit CAS-System wie Geogebra kann man nun verschiedene Dinge anschauen !
+
+---
+Gesucht Normalprojektion eines Punktes P auf eine Ebene durch die Punkte \\((0,0,0), (1,2,1) \\) und \\((0,0,1) \\)
+
+--
+Lösung: Die Ebene wird durch die Vektoren \\((0,0,1), (1,2,1) \\) aufgespannt. Damit ist \\( A = \begin{pmatrix}  0 & 1 \\\\ 0 & 2  \\\\ 1 & 1 \end{pmatrix}\\).
+
+Die Projektion von P auf die Ebene ist
+$$
+proj_E P = Ax = A(A^TA)^{-1}A^T P
+$$
+--
+
+$$A^TA = \begin{pmatrix}  0 & 0 &1 \\\\ 1 & 2  & 1 \end{pmatrix}   \begin{pmatrix}  0 & 1 \\\\ 0 & 2  \\\\ 1 & 1 \end{pmatrix} = \begin{pmatrix}  1 & 1 \\\\ 1 & 6  \end{pmatrix}$$
+
+<br>
+$$(A^TA)^{-1} = 
+\frac{1}{5} \begin{pmatrix}  6 & -1 \\\\ -1 & 1  \end{pmatrix}$$
+
+--
+$$
+A(A^TA)^{-1}A^T P = \begin{pmatrix}  0 & 1 \\\\ 0 & 2  \\\\ 1 & 1 \end{pmatrix} 
+\frac{1}{5} \begin{pmatrix}  6 & -1 \\\\ -1 & 1  \end{pmatrix}
+\begin{pmatrix}  0 & 0 &1 \\\\ 1 & 2  & 1 \end{pmatrix} P 
+$$
+
+<br>
+
+$$
+A(A^TA)^{-1}A^T P = 
+\frac{1}{5}\begin{pmatrix} 1 &  2 & 0 \\\\ 2 & 4 & 0  \\\\ 0 & 0 & 5 \end{pmatrix} P
+$$
+
+---
+
+<video width="1072" height="720" data-autoplay >
+	    <source src="media/movies/ProjEbene.m4v" type="video/mp4" />
+	    <source src="media/movies/ProjEbene.webm" type="video/webm" />
+		Your browser does not support the <code>video</code> element.
+</video>
 ---
 ---
 ---
