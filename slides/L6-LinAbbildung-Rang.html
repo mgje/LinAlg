@@ -66,9 +66,10 @@ $$ ist linear, wenn gilt
 für alle \\( x,y  \in \mathbb{R}^n  \\) und  \\( c \in \mathbb{R}  \\).
 
 ---
-Es folgt, dasss der Nullvektor immer auf den Nullvektor abgebildet wird. Es gilt für jede lineare Abbildung \\{ L \\}
-$$
+Daraus folgt, dasss der Nullvektor immer auf den Nullvektor abgebildet wird. Es gilt für jede lineare Abbildung \\( L \\)
+<br>
 
+$$
 L(\vec{0}) = L(x + (−x)) = L(x) + L(−x) = L(x) − L(x) = \vec{0}.
 $$
 
@@ -124,11 +125,89 @@ $$
 
 Damit erfüllt \\(L\\) die beiden Eigenschaften einer linearen Abbildung
 ---
+### Beispiel (Statistik)
+
+Die Abbildung, die einem Vektor \\(x \in \mathbb{R}^n\\) den arithmetischen Mittelwert seiner 
+Koordinaten zugeordnet, ist eine lineare Abbildung von \\(\mathbb{R}^n \to \mathbb{R}\\) mit 
+<br>
+$$
+x \mapsto a^T x = \frac{1}{n} \sum\_{i=1}^n x\_i, x \in \mathbb{R}^n \\\\ \quad \mbox{und} \quad a = (\frac{1}{n},\frac{1}{n},\cdots,\frac{1}{n})
+$$
 ---
+### Darstellung von linearen Abbildungen von \\( \mathbb{R}^n\\) nach \\( \mathbb{R}^m\\) durch Matrizen
+
+Eine reelle lineare Abbildung \\(L\\) von \\( \mathbb{R}^1\\) nach \\( \mathbb{R}^1\\) wird eindeutig durch den reellen Parameter \\(a\\) in \\(L(x) = ax\\) beschrieben. Eine lineare Abbildung von \\( \mathbb{R}^n\\)  nach \\( \mathbb{R}^m\\)  wird eindeutig durch eine Matrix \\(A \in \mathbb{R}^{m×n} \\) dargestellt.
 ---
+### Zusammenhang Matrix lineare Abbildung
+
+Für \\(A \in \mathbb{R}^{m×n} \\)  ist die Abbildung \\(L(x) = Ax, x \in \mathbb{R}^n\\), linear von \\( \mathbb{R}^n \to \mathbb{R}^m \\). Weisen Sie dies nach.
+--
+Es gilt
+<br>
+
+$$
+L(x+y) = A(x+y) = A(x) + A(y) = L(x) +L(y) \\\\ \quad \mbox{und} \quad L(cx) = A(cx) = c A(x) = c L(x)
+$$
+
 ---
+#### Jede lineare Abbildung kann durch eine Matrix dargestellt werden
+
+Zeigen Sie, dass es zu jeder linearen Abbildung \\(L : \mathbb{R}^n \to \mathbb{R}^m\\) genau eine Matrix \\(A \in \mathbb{R}^{m×n}\\) gibt, die \\(L\\) darstellt, das heisst \\(L(x) = Ax \quad \mbox{für alle} \quad x \in \mathbb{R}^n\\).
+--
+Beweis: Wir zeigen zunächst die Existenz einer solchen Abbildung und danach deren Eindeutigkeit.
+
+<br>
+
+Wir betrachten die natürliche Basis \\(e\_1, e\_2, \cdots, e\_n \\) des \\(\mathbb{R}^n\\) und konstruieren \\(A\\), indem wir als Spaltenvektoren von \\(A\\) die Bilder \\(L(e\_1), L(e\_2), \cdots, L(e\_n)\\) wählen.
+
+<br>
+$$
+A = \begin{pmatrix} | &| & \cdots & |   \\\\ L(e\_1) & L(e\_2) & \cdots & L(e\_n)\\\\ | &| & \cdots & |  \end{pmatrix}
+$$
+--
+
+Für einen Vektor \\(x \in  \mathbb{R}^n\\) ist das Produkt \\(Ax\\) eine Linearkombination der
+Spalten von \\(A\\) mit den Koordinaten des Vektors  \\(x\\)  also
+<br>
+
+$$
+\begin{align}
+A x &= x\_1 L(e\_1)+x\_2 L(e\_2)+\cdots+x\_nL(e\_n) \\\\
+&= L(x\_1e\_1)+L(x\_2e\_2)+\cdots+L(x\_ne\_n) \\\\
+&= L(x\_1e\_1+x\_2e\_2+\cdots+x\_ne\_n) = L(\vec{x})
+\end{align}
+$$
+
+Damit ist die Existenz gezeigt.
+
+--
+#### Eindeutigkeit
+
+Wir zeigen nun, dass die Matrix eindeutig ist. Hierzu seien \\(A, B \in \mathbb{R}^{m×n}\\) und \\(L(x) = Ax = Bx\\) für alle \\(x \in \mathbb{R}^n\\). Dann muss insbesondere für die natürlichen Basisvektoren \\(e\_1, e\_2, \cdots, e\_n\\) aus \\(\mathbb{R}^n\\) gelten: \\(A e\_i = Be\_i\\) für \\(i = 1,2,\cdots,n\\). Was ist aber \\(Ae\_i\\)? \\(Ae\_i\\) ist genau die i-te Spalte von A. Also haben A und B dieselben Spalten und sind daher gleich.
+
+
 ---
+### Lineare Abbildungen und Matrizen
+
+Es ist \\(A \in \mathbb{R}^{m×n}\\) eine reelle Matrix. Dann ist die Abbildung
+
+<br>
+
+$$
+\mathbb{R}^n \to \mathbb{R}^m \\\\
+x \mapsto Ax
+$$
+
+linear und ist umgekehrt \\(L : \mathbb{R}^n \to \mathbb{R}^m  \\) eine lineare Abbildung, 
+dann gibt es genau eine reelle Matrix \\(A \in \mathbb{R}^{m×n}\\) mit \\(L(x)=Ax\\)
+für alle \\(x \in \mathbb{R}^n\\)
 ---
+### Betrachtung Lineare Abbildung - Transformation
+
+![Darstellung LinAbb](media/L6-Darstellung.png)
+$$
+\mbox{Punkt nach Punkt} \quad \quad \quad \mbox{Vektor nach Vektor}
+$$
 ---
 
 ---
