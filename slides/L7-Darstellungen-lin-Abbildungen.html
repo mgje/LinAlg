@@ -41,39 +41,123 @@
 <!-- Einleitung -->
 <section data-markdown data-separator="---" data-vertical="--" data-background="#FFFFFF">
 <script type="text/template">
-### Spiegelung an Y-Achse
-
-![Spiegleung](media/L7/Spiegelung_y.png)
----
-
-$$S_Y=\left( \begin{matrix} 
-        -1 & 0\\\\
-        0 & 1 \\\\
-        \end{matrix} 
-        \right) $$
----
-### Drehung um den Ursprung
-![Spiegleung](media/L7/Drehung_R2.png)
-
----
-$$R_{\alpha}=\left( \begin{matrix} 
-        \cos (\alpha) & \sin(\alpha)\\\\
-        - \sin(\alpha) & \cos(\alpha) \\\\
-        \end{matrix} 
-        \right) $$
----
-### Orthogonale Projektion 
-### auf x-Achse
+### Spiegelung an der y-Achse
 
 <br>
 
-$$ \begin{matrix} 
-    L: \mathbb{R}^2 \to \mathbb{R}^2 \\\\
-    (x,y) \mapsto (x,0) \\\\
-    \end{matrix} 
-    $$
+$$
+L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
+\quad \quad \quad (x,y) \mapsto (-x,y)
+$$
+
+---
+
+![Spiegelung](media/L6-Spiegelung.png)
+
+---
+Die Standardmatrix ist
 
 <br>
+
+$$
+A = \begin{pmatrix} -1 & 0  \\\\ 0 & 1 \end{pmatrix}
+$$
+---
+### Drehung
+
+![Drehung](media/L6-Drehung.png)
+
+---
+#### Darstellung einer Drehung um den Punkt (0,0) gegen den Uhrzeigersinn um \\(90°\\)
+
+Diese lin. Abbildung bildet
+
+<br>
+
+\\(e\_1= \begin{pmatrix}1\\\\0\end{pmatrix}\\) auf \\(\quad e\_1^{\prime}=\begin{pmatrix}0\\\\1\end{pmatrix}\\)
+
+<br>
+
+\\(e\_2=\begin{pmatrix} 0  \\\\ 1 \end{pmatrix}\\) auf \\(\quad e\_2^{\prime}=\begin{pmatrix} -1  \\\\ 0 \end{pmatrix}\\)
+
+<br> 
+
+$$
+A = \begin{pmatrix} 0 & -1  \\\\ 1 & 0 \end{pmatrix}
+$$
+---
+Auch Drehungen sind lineare Abbildungen. Eine Drehung um den Winkel \\(\phi\\) im mathematisch positiven Sinn (gegen den Uhrzeigersinn) kann wie folgt beschrieben werden:
+
+<br>
+
+$$
+L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
+\quad \quad \quad (x,y) \mapsto (x\cos(\phi)−y\sin(\phi),x\sin(\phi)+y\cos(\phi))
+$$
+<br>
+
+
+---
+#### Drehung Gegenuhrzeigersinn um einen Winkel  \\(\phi\\)
+
+
+\\(e\_1= \begin{pmatrix}1\\\\0\end{pmatrix}\\) auf \\(\quad e\_1^{\prime}=\begin{pmatrix}\cos(\phi)\\\\\sin(\phi)\end{pmatrix}\\)
+
+<br>
+
+\\(e\_2=\begin{pmatrix} 0  \\\\ 1 \end{pmatrix}\\) auf \\(\quad e\_2^{\prime}=\begin{pmatrix} -\sin(\phi) \\\\ \cos(\phi) \end{pmatrix}\\)
+
+<br> 
+
+$$
+A = \begin{pmatrix} \cos(\phi) & -sin(\phi)  \\\\ sin(\phi) & \cos(\phi) \end{pmatrix}
+$$
+
+---
+###Projektion
+
+![Projektion](media/L6-Projektion.png)
+
+$$
+\mbox{auf x-Achse} \quad \quad \quad \quad \quad \mbox{auf y-Achse}
+$$
+---
+Die orthogonale Projektion auf die x-Achse ist auch eine lineare Abbildung. Die Zuordnungsvorschrift ist
+
+$$
+L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
+\quad \quad \quad (x,y) \mapsto (x,0)
+$$
+<br>
+
+Die Standardmatrix ist
+
+<br>
+
+$$
+A = \begin{pmatrix} 1 & 0  \\\\ 0 & 0 \end{pmatrix}
+$$
+
+---
+Die orthogonale Projektion auf die y-Achse ist eine lineare Abbildung. Die Zuordnungsvorschrift ist
+
+$$
+L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
+\quad \quad \quad (x,y) \mapsto (0,y)
+$$
+<br>
+
+Die Standardmatrix ist
+
+<br>
+
+$$
+A = \begin{pmatrix} 0 & 0  \\\\ 0 & 1 \end{pmatrix}
+$$
+---
+
+Anwendung
+
 ---
 ### Orthogonale Projektion 
 ### Punkt auf eine Gerade a
@@ -161,25 +245,61 @@ Wähle eine Matrix \\(A\\) so, dass die Spaltenvektoren eine Basis eines Unterra
 	Gerade in \\(\mathbb{R}^2\\), dann ist die Projektionsmatrix
 
 $$
-(A^TA)^{-1} A^T 
+proj_w P = A (AA^T)^{-1} A^T P
 $$
 ---
 
+$$
+\begin{align}
+\vec{b} &= \begin{pmatrix} \cos(\alpha)  \\\\ \sin(\alpha)\end{pmatrix}\\\\
+b^Tb &= \begin{pmatrix} \cos(\alpha),&\sin(\alpha)\end{pmatrix} \begin{pmatrix} \cos(\alpha)  \\\\ \sin(\alpha)\end{pmatrix}= \begin{pmatrix} \cos(\alpha)  \\\\ \sin(\alpha)\end{pmatrix} \\\\
+   &= \cos(\alpha)^2 + \sin(\alpha)^2 = 1\\\\
+(b^Tb)^{-1} &= 1
+\end{align}
+$$
+---
 
+$$
+\begin{align}
+proj_w P &= A (AA^T)^{-1} A^T P 
+proj_w P &= A A^T P \\\\
+\\\\
+\end{align}
+$$
 
+$$
+\begin{align}
+A A^T &=  \begin{pmatrix} \cos(\alpha)  \\\\ \sin(\alpha)\end{pmatrix} \begin{pmatrix} \cos(\alpha),&\sin(\alpha)\end{pmatrix} \\\\
+  &= \begin{pmatrix} \cos(\alpha)^2 & \sin(\alpha)\cos(\alpha) \\\\ \sin(\alpha)\cos(\alpha) & \sin(\alpha)^2\end{pmatrix} 
+\end{align}
+$$ 
 
+---
+
+<video width="796" height="446" data-autoplay >
+	    <source src="media/movies/ProjGerade.m4v" type="video/mp4" />
+	    <source src="media/movies/ProjektGerade.webm" type="video/webm" />
+		Your browser does not support the <code>video</code> element.
+</video>
+
+[Link to GeoGebraTube](http://www.geogebratube.org/material/show/id/144182)
 
 ---
 ---
+
+
+
+
+
+=======
+## zweite Möglichkeit
 ---
 
-
-
-
+---
 
 </script>
 </section>
-0
+
 			</div>
 
 		</div>
