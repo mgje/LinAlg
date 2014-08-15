@@ -41,7 +41,109 @@
 <!-- Einleitung -->
 <section data-markdown data-separator="---" data-vertical="--" data-background="#FFFFFF">
 <script type="text/template">
-# Basiswechsel
+## Orthogonale Matrizen ,Basiswechsel
+---
+Man kann zur Lösung von Problemen der linearen Algebra unterschiedliche Basen verwenden, so dass man oft von einer Basis zur anderen übergeht. Da Basen verallgemeinterte Koordinatensysteme sind entspricht dieses Vorgehen Koordinatentransformationen. Im weiteren untersuchen wir, wie sich derartige Basiswechsel durch Matrizen realisieren lassen. Dabei stossen wir auf quadratische Matrizen mit orthogonalen Spaltenvektoren
+
+---
+### Definition
+
+Eine Matrix mit der Eigenschaft
+
+$$
+A^{-1} = A^T
+$$
+
+heisst orthogonal.
+
+
+Es folgt: 
+
+$$
+A^TA=AA^T = I
+$$
+
+---
+### Beispiel
+
+<br>
+
+$$
+A = \begin{pmatrix}  \frac{3}{7} & \frac{2}{7} & \frac{6}{7}   \\\\ -\frac{6}{7} & \frac{3}{7} & \frac{2}{7}  \\\\ \frac{2}{7} & \frac{6}{7} & \frac{-3}{7}  \end{pmatrix} 
+$$
+ist orthogonal, weil 
+
+---
+$$
+A^T A= \begin{pmatrix}  \frac{3}{7} & -\frac{6}{7} & \frac{2}{7}   \\\\ \frac{2}{7} & \frac{3}{7} & \frac{6}{7}  \\\\ \frac{6}{7} & \frac{2}{7} & \frac{-3}{7}  \end{pmatrix} 
+    \begin{pmatrix}  \frac{3}{7} & \frac{2}{7} & \frac{6}{7}   \\\\ -\frac{6}{7} & \frac{3}{7} & \frac{2}{7}  \\\\ \frac{2}{7} & \frac{6}{7} & \frac{-3}{7}  \end{pmatrix} \\\\
+    = \begin{pmatrix}  1 & 0 & 0   \\\\ 0 & 1 & 0  \\\\ 0 & 0 & 1  \end{pmatrix} 
+$$
+
+---
+Eine Rotation in \\(\mathbb{R}^2\\) um einen Winkel \\(\phi\\) gegen den Uhrzeigersinn wird beschrieben mit
+
+<br>
+
+$$
+A = \begin{pmatrix} \cos(\phi) & -sin(\phi)  \\\\ sin(\phi) & \cos(\phi) \end{pmatrix}
+$$
+
+<br> ge
+
+Diese Matrix ist orthogonal für jedes \\(\phi\\)
+
+$$
+A^T A = \begin{pmatrix} \cos(\phi) & sin(\phi)  \\\\ -sin(\phi) & \cos(\phi) \end{pmatrix}
+\begin{pmatrix} \cos(\phi) & -sin(\phi)  \\\\ sin(\phi) & \cos(\phi) \end{pmatrix}\\\\
+= \begin{pmatrix} 1 & 0  \\\\ 0& 1 \end{pmatrix}
+$$
+--
+Eine genauere Betrachtung zeigt, dass die Spaltenvektoren 
+orthonormal sind.
+
+---
+#### Satz
+
+Für eine \\( (n,n)\\)-Matrix \\(A\\) sind die folgenden Aussagen äquivalent
+
+a) A ist orthogonal <br>
+b) Die Zeilenvektoren sind orthonormal bezüglich des inneren Skalarprodukts \\(\mathbb{R}^n\\)<br>
+c) Die Spaltenvektoren sind orthonormal bezüglich des inneren Skalarprodukts \\(\mathbb{R}^n\\)<br>
+
+---
+#### Satz
+a) Die Inverse einer orthogonalen Matrix ist orthogonal.<br>
+b) Produkt orthogonaler Matrizen ist orthogonal<br>
+d) Für eine orthogonale Matrix gilt \\(|det(A)|=1\\)<br>
+
+<br>
+Beweis Übungen
+---
+#### Satz
+
+Für eine \\( (n,n)\\)-Matrix \\(A\\) sind die folgenden Aussagen äquivalent
+
+a) A ist orthogonal <br>
+b) \\(\left\Vert A x\right\Vert = \left\Vert x \right\Vert \\) für alle \\(x \in \mathbb{R}^n\\)<br>
+c) \\(A x \cdot A y = x \cdot y\\) für alle \\(x,y \in \mathbb{R}^n\\)<br>
+---
+
+Eine lineare Abbildung \\(T:\mathbb{R}^n \to \mathbb{R}^n\\) mit einer orthogonalen Matrix heisst orthogonaler Operator. Nach obigem Satz ist ein Operator genau dann orthogonal, wenn er alle Vektornormen invariant lässt.
+
+---
+#### Das Problem des Basiswechsels
+
+Seien \\(B\\) und \\(B^{\prime}\\) zwei Basen eines Vektorraums \\(V\\). Welcher Zusammenhang besteht zwischen den Koordinatenmatrizen \\([v]\_{B}\\) und \\([v]\_{B^{\prime}}\\) eines Vektors \\(v \in V\\)
+---
+---
+---
+---
+---
+---
+---
+---
+---
 ---
 ---
 </script>
