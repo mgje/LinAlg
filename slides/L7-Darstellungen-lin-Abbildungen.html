@@ -41,39 +41,123 @@
 <!-- Einleitung -->
 <section data-markdown data-separator="---" data-vertical="--" data-background="#FFFFFF">
 <script type="text/template">
-### Spiegelung an Y-Achse
-
-![Spiegleung](media/L7/Spiegelung_y.png)
----
-
-$$S_Y=\left( \begin{matrix} 
-        -1 & 0\\\\
-        0 & 1 \\\\
-        \end{matrix} 
-        \right) $$
----
-### Drehung um den Ursprung
-![Spiegleung](media/L7/Drehung_R2.png)
-
----
-$$R_{\alpha}=\left( \begin{matrix} 
-        \cos (\alpha) & \sin(\alpha)\\\\
-        - \sin(\alpha) & \cos(\alpha) \\\\
-        \end{matrix} 
-        \right) $$
----
-### Orthogonale Projektion 
-### auf x-Achse
+### Spiegelung an der y-Achse
 
 <br>
 
-$$ \begin{matrix} 
-    L: \mathbb{R}^2 \to \mathbb{R}^2 \\\\
-    (x,y) \mapsto (x,0) \\\\
-    \end{matrix} 
-    $$
+$$
+L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
+\quad \quad \quad (x,y) \mapsto (-x,y)
+$$
+
+---
+
+![Spiegelung](media/L6-Spiegelung.png)
+
+---
+Die Standardmatrix ist
 
 <br>
+
+$$
+A = \begin{pmatrix} -1 & 0  \\\\ 0 & 1 \end{pmatrix}
+$$
+---
+### Drehung
+
+![Drehung](media/L6-Drehung.png)
+
+---
+#### Darstellung einer Drehung um den Punkt (0,0) gegen den Uhrzeigersinn um \\(90°\\)
+
+Diese lin. Abbildung bildet
+
+<br>
+
+\\(e\_1= \begin{pmatrix}1\\\\0\end{pmatrix}\\) auf \\(\quad e\_1^{\prime}=\begin{pmatrix}0\\\\1\end{pmatrix}\\)
+
+<br>
+
+\\(e\_2=\begin{pmatrix} 0  \\\\ 1 \end{pmatrix}\\) auf \\(\quad e\_2^{\prime}=\begin{pmatrix} -1  \\\\ 0 \end{pmatrix}\\)
+
+<br> 
+
+$$
+A = \begin{pmatrix} 0 & -1  \\\\ 1 & 0 \end{pmatrix}
+$$
+---
+Auch Drehungen sind lineare Abbildungen. Eine Drehung um den Winkel \\(\phi\\) im mathematisch positiven Sinn (gegen den Uhrzeigersinn) kann wie folgt beschrieben werden:
+
+<br>
+
+$$
+L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
+\quad \quad \quad (x,y) \mapsto (x\cos(\phi)−y\sin(\phi),x\sin(\phi)+y\cos(\phi))
+$$
+<br>
+
+
+---
+#### Drehung Gegenuhrzeigersinn um einen Winkel  \\(\phi\\)
+
+
+\\(e\_1= \begin{pmatrix}1\\\\0\end{pmatrix}\\) auf \\(\quad e\_1^{\prime}=\begin{pmatrix}\cos(\phi)\\\\\sin(\phi)\end{pmatrix}\\)
+
+<br>
+
+\\(e\_2=\begin{pmatrix} 0  \\\\ 1 \end{pmatrix}\\) auf \\(\quad e\_2^{\prime}=\begin{pmatrix} -\sin(\phi) \\\\ \cos(\phi) \end{pmatrix}\\)
+
+<br> 
+
+$$
+A = \begin{pmatrix} \cos(\phi) & -sin(\phi)  \\\\ sin(\phi) & \cos(\phi) \end{pmatrix}
+$$
+
+---
+###Projektion
+
+![Projektion](media/L6-Projektion.png)
+
+$$
+\mbox{auf x-Achse} \quad \quad \quad \quad \quad \mbox{auf y-Achse}
+$$
+---
+Die orthogonale Projektion auf die x-Achse ist auch eine lineare Abbildung. Die Zuordnungsvorschrift ist
+
+$$
+L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
+\quad \quad \quad (x,y) \mapsto (x,0)
+$$
+<br>
+
+Die Standardmatrix ist
+
+<br>
+
+$$
+A = \begin{pmatrix} 1 & 0  \\\\ 0 & 0 \end{pmatrix}
+$$
+
+---
+Die orthogonale Projektion auf die y-Achse ist eine lineare Abbildung. Die Zuordnungsvorschrift ist
+
+$$
+L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
+\quad \quad \quad (x,y) \mapsto (0,y)
+$$
+<br>
+
+Die Standardmatrix ist
+
+<br>
+
+$$
+A = \begin{pmatrix} 0 & 0  \\\\ 0 & 1 \end{pmatrix}
+$$
+---
+
+Anwendung
+
 ---
 ### Orthogonale Projektion 
 ### Punkt auf eine Gerade a
@@ -152,22 +236,11 @@ $$R_{-a} \cdot P_X \cdot R_a \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \ri
 \\( \left( \begin{matrix} \cos^2 (\alpha) & \cos(\alpha)\sin(\alpha)\\\\ \cos(\alpha)\sin(\alpha) & \sin^2(\alpha)\\\\ \end{matrix} \right) \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right)  \\)
 
 ---
-
-
-</script>
-</section>
-
-<!-- und weiteres -->
-<section data-markdown data-separator="---" data-vertical="--" data-background="#B3CDFA" data-background-transition="slide" >
-<script type="text/template" >
-
-## Zusammenfassung
+## zweite Möglichkeit
 ---
 
-
-
-
 ---
+
 </script>
 </section>
 			</div>
