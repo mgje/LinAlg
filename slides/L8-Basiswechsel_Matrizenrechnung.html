@@ -136,10 +136,84 @@ Eine lineare Abbildung \\(T:\mathbb{R}^n \to \mathbb{R}^n\\) mit einer orthogona
 
 Seien \\(B\\) und \\(B^{\prime}\\) zwei Basen eines Vektorraums \\(V\\). Welcher Zusammenhang besteht zwischen den Koordinatenmatrizen \\([v]\_{B}\\) und \\([v]\_{B^{\prime}}\\) eines Vektors \\(v \in V\\)
 ---
+#### Wir betrachten dies  in \mathbb{R}^2
+
+Seien \\(B = \left\\{ \vec{u\_1},\vec{u\_2}\right\\} \\) und \\(B^{\prime} = \left\\{ \vec{u\_1^{\prime}},\vec{u\_2^{\prime}} \right\\} \\) zwei Basen.
+
+sowie
+
+$$
+\begin{bmatrix} \vec{u\_1^{\prime}} \end{bmatrix}\_B = \begin{pmatrix}a\\\\b\end{pmatrix},
+\begin{bmatrix} \vec{u\_2^{\prime}} \end{bmatrix}\_B = \begin{pmatrix}c\\\\d\end{pmatrix}
+$$
+
+also
+
+$$
+\vec{u\_1^{\prime}} = a \vec{u\_1} + b \vec{u\_2}\\\\
+\vec{u\_2^{\prime}} = c \vec{u\_1} + d \vec{u\_2}
+$$
+
 ---
+Ein Vektor \\(\vec{v}\\) hat bezüglich der Basis \\(B^{\prime}\\) die Koordinaten
+
+$$
+\begin{bmatrix} \vec{v} \end{bmatrix}\_{B^{\prime}} = \begin{pmatrix}v\_1\\\\v\_2\end{pmatrix}
+$$
+
+das entspricht der Linearkombination
+
+$$
+\vec{v} = v\_1 \vec{u\_1^{\prime}} + v\_2 \vec{u\_1^{\prime}}
+$$
+
+mit den anderen Basisvektoren
+
+$$
+\begin{align}
+\vec{v} &= v\_1 (a \vec{u\_1} + b \vec{u\_2}) + v\_2 (c \vec{u\_1} + d \vec{u\_2}) \\\\
+\vec{v} &= (v\_1 a + v\_2 c) \vec{u\_1} + (v\_1 b + v\_2 d) \vec{u\_2}
+\end{align}
+$$
 ---
+Die Koordinaten von \\(\vec{v}\\) bezüglich der Basis \\(B\\)
+
+$$
+\begin{bmatrix} \vec{v} \end{bmatrix}\_{B} = \begin{pmatrix}v\_1 a + v\_2 b\\\\v\_1 b+ v\_2 d\end{pmatrix}
+$$
+
+lässt sich als Produkt schreiben
+
+$$
+\begin{bmatrix} \vec{v} \end{bmatrix}\_{B} = \begin{pmatrix} a & c \\\\ b & d \end{pmatrix} \begin{pmatrix} v\_1\\\\ v\_2 \end{pmatrix} $$
+
+also
+
+$$
+\begin{bmatrix} \vec{v} \end{bmatrix}\_{B} = \begin{pmatrix} a & c \\\\ b & d \end{pmatrix} \begin{bmatrix} \vec{v} \end{bmatrix}\_{B^{\prime}}$$
+
 ---
+Seien \\(B = \left\\{ \vec{u\_1},\vec{u\_2},\cdots,\vec{u\_n}\right\\} \\) und \\(B^{\prime} = \left\\{ \vec{u\_1^{\prime}},\vec{u\_2^{\prime}},\cdots, \vec{u\_n^{\prime}}\right\\} \\) Basen eines Vektorraums \\(V\\).
+
+Dann gilt für die Koordinaten \\(\begin{bmatrix} \vec{v} \end{bmatrix}\_{B}\\) und \\(\begin{bmatrix} \vec{v} \end{bmatrix}\_{B^{\prime}}\\) eines Vektors \\(\vec{v} \in V\\)
+
+$$
+\begin{bmatrix} \vec{v} \end{bmatrix}\_{B^{\prime}} = A \begin{bmatrix} \vec{v} \end{bmatrix}\_{B}
+$$
+
+wobei \\(A\\) eine \\( (n,n)\\)-Matrix ist und aus den Spalten
+
+$$
+\begin{bmatrix} \vec{u\_1^{\prime}} \end{bmatrix}\_{B},
+\begin{bmatrix} \vec{u\_2^{\prime}} \end{bmatrix}\_{B},
+\cdots ,
+\begin{bmatrix} \vec{u\_n^{\prime}} \end{bmatrix}\_{B},
+$$
+
+besteht.
+
 ---
+#### Beispiel
 ---
 ---
 ---
