@@ -214,12 +214,139 @@ besteht.
 
 ---
 #### Beispiel
+
+Seien \\(B = \left\\{ \vec{u\_1},\vec{u\_2}\right\\} \\) und \\(B^{\prime} = \left\\{ \vec{u\_1^{\prime}},\vec{u\_2^{\prime}} \right\\} \\) zwei Basen.
+
+mit 
+
+$$
+\vec{u\_1}=\begin{pmatrix} 1 \\\\ 0 \end{pmatrix},\vec{u\_2}=\begin{pmatrix} 0 \\\\ 1 \end{pmatrix} \\\\
+\vec{u\_1^{\prime}}=\begin{pmatrix} 1 \\\\ 1 \end{pmatrix},\vec{u\_2^{\prime}}=\begin{pmatrix} 2 \\\\ 1 \end{pmatrix}
+$$
+
+Gesucht der Matrixübergang \\(B^{\prime}\\) nach \\(B\\) und \\(\begin{bmatrix} \vec{v} \end{bmatrix}\_{B}\\) für \\(\begin{bmatrix} \vec{v} \end{bmatrix}\_{B^{\prime}} = \begin{pmatrix} -3 \\\\ 5 \end{pmatrix}\\)
+
+---
+
+weil 
+
+$$
+\begin{bmatrix} u\_1^{\prime}\end{bmatrix}\_{B} = \begin{pmatrix} 1 \\\\ 1 \end{pmatrix},
+\begin{bmatrix} u\_2^{\prime}\end{bmatrix}\_{B} = \begin{pmatrix} 2 \\\\ 1 \end{pmatrix}
+$$
+
+ist 
+
+$$
+A = \begin{pmatrix} 1 & 2 \\\\ 1 & 1 \end{pmatrix} 
+$$
+
+Die Übergangsmatrix von \\(B^{\prime}\\) nach \\(B\\)
+
+<br>
+
+$$
+\begin{bmatrix} \vec{v} \end{bmatrix}\_{B^{\prime}} = \begin{pmatrix} 1 & 2 \\\\ 1 & 1 \end{pmatrix} \begin{pmatrix} -3 \\\\ 5 \end{pmatrix} = \begin{pmatrix} 7 \\\\ 2 \end{pmatrix}
+$$
+---
+Satz: Für die Übergangsmatrix \\(A\\) von \\(B^{\prime}\\) nach \\(B\\) gilt:
+
+* \\(B\\) ist invertierbar.
+* \\(B^{-1}\\) ist die Übergangsmatrix von \\(B\\) nach \\(B^{\prime}\\)
+
+---
+Satz: Seien \\(B^{\prime}\\) nach \\(B\\) Orthonormalbasen eines n-dimensionalen 
+Vektorraums \\(V\\) mit Skalarprodukt. Dann ist die Übergangsmatrix \\(A\\) von \\(B^{\prime}\\) nach \\(B\\) 
+orthogonal, das heisst:
+
+\\(A^{-1}= A^T\\)
+---
+Wir betrachten ein rechtwinkliges \\(x,y\\)-Koordinatensystem in der Ebene, das durch eine Drehung um den Winkel \\(\Theta\\) in ein \\(x^{\prime},y^{\prime}\\)-System übergeht.
+
+Jeder Punkt \\(Q\\) hat dann Koordinaten \\((x,y)\\) im \\(x,y\\)-System sowie Koordinaten in \\((x^{\prime},y^{\prime})\\) im \\(x^{\prime},y^{\prime}\\)-System.
+
+---
+
+![Koordinatentransformationen](media/L8-Koordinatentransformation.png)
+---
+Sind \\(u\_1,u\_2,u\_1^{\prime},u\_2^{\prime}\\) in Richtung der positiven Koordiantenachsen (Fig. b),
+so entspricht die Rotation des Koordinatensystems einem Basiswechsel von \\(B=\\{ u\_1,u\_2\\}\\) zu 
+\\(B^{\prime}=\\{ u\_1^{\prime},u\_2^{\prime}\\}\\). Wir erhalten für die Koordinaten von \\(Q\\)
+
+$$
+ \begin{pmatrix} x^{\prime} \\\\ y^{\prime} \end{pmatrix} = A^{-1} \begin{pmatrix} x \\\\ y \end{pmatrix}
+$$
+
+wobei \\(A\\) die Übergangsmatrix von \\(B^{\prime}\\) nach \\(B\\) ist.
+---
+Die Koordinaten von \\(u\_1^{\prime},u\_2^{\prime}\\) bezüglich der Basis \\(B\\)
+$$
+\begin{bmatrix}  u\_1^{\prime} \end{bmatrix}\_{B} = \begin{pmatrix} \cos(\Theta) \\\\ \sin(\Theta) \end{pmatrix}\\\\
+\begin{bmatrix}  u\_2^{\prime} \end{bmatrix}\_{B} = \begin{pmatrix} -\sin(\Theta) \\\\ \cos(\Theta) \end{pmatrix}
+$$
+
+---
+#### Die Übergangsmatrix \\(A\\)
+
+$$
+A = \begin{pmatrix} \cos(\Theta) & -\sin(\Theta) \\\\ \sin(\Theta) & \cos(\Theta) \end{pmatrix}
+$$
+
+ist orthogonal
+
+
+$$
+A^{-1}= A^T = \begin{pmatrix} \cos(\Theta) & \sin(\Theta) \\\\ -\sin(\Theta) & \cos(\Theta) \end{pmatrix}
+$$
+---
+#### Koordinatentransformationen von \\(B\\) nach  \\(B^{\prime}\\) 
+
+$$
+\begin{pmatrix} x^{\prime} \\\\ y^{\prime} \end{pmatrix} = \begin{pmatrix} \cos(\Theta) & \sin(\Theta) \\\\ -\sin(\Theta) & \cos(\Theta) \end{pmatrix} \begin{pmatrix} x \\\\ y \end{pmatrix} 
+$$
+
+---
+Zeige dass \\(A\\) orthogonal ist mit
+
+* Multiplikation \\(A^TA\\)
+* Zeilenvektoren sind orthonormal
+* Spaltenvektoren sind orthonormal 
+
+$$
+A = \begin{pmatrix} \frac{4}{5} & 0& -\frac{3}{5}\\\\ 
+-\frac{9}{25} & \frac{4}{5} & -\frac{12}{25}\\\\
+\frac{12}{25} & \frac{3}{25}& \frac{16}{25}\end{pmatrix} 
+$$
+
 ---
 ---
 ---
 ---
 ---
 ---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 </section>
 			</div>
